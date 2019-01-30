@@ -54,11 +54,9 @@ public class ConnectionHandler implements Runnable {
             int[] d = new int[5];
             
             if(buffer.getdata(d)) {
-                System.out.println(Arrays.toString(d));
                 response.send(Arrays.toString(d));
             }
             else {
-                System.out.println("wait");
                 response.send("wait");
             }
             
