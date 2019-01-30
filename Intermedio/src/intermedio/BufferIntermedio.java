@@ -1,7 +1,9 @@
 package intermedio;
 /**
  *
- * @author ragnar
+ * @author Luis Antonio Correa Leyva
+ * @email correaleyval@gmail.com
+ * 
  */
 // Definicion del objeto buffer para el proceso Intermedio
 public class BufferIntermedio {
