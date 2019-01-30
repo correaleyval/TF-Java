@@ -10,6 +10,10 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -25,15 +29,53 @@ public class MainWindow extends javax.swing.JFrame {
         
         arrayLabel.setText("");
         stateLabel.setText("");
+        
+        r = new Random();
     }
     
     private String serverip;
     private Socket cliente;
     private DataInputStream  input; 
     private DataOutputStream output;
+    private Random r;
+    private String query;
     
     private void startProduction() {
         stateLabel.setText("Comenzando produccion");
+        
+        SwingUtilities.invokeLater(
+            new Runnable()
+            {
+                public void run() 
+                {
+                    // Generar query para el servidor con 5 numeros aleatorios
+                    
+                    query = "POST ";
+                    String strarr = "";
+                    
+                    for(int i = 0; i < 5; i++) {
+                        int a = 1 + r.nextInt(100);
+                        strarr +=  a + " ";
+                    }
+                    
+                    query += strarr;
+                    
+                    arrayLabel.setText(strarr);
+                    
+                    try {
+                        output.writeUTF(query);
+                        output.flush();
+                        stateLabel.setText(input.readUTF());
+                        
+                    } catch (IOException ex) {
+                        stateLabel.setText("Error de conexion");
+                    }
+                    
+
+                    
+                } 
+            } 
+        ); 
     }
     
     /**

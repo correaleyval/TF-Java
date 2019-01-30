@@ -57,7 +57,7 @@ public class ConnectionHandler implements Runnable {
                 response.send(Arrays.toString(d));
             }
             else {
-                response.send("wait");
+                response.send("Esperando");
             }
             
             return;
@@ -77,10 +77,10 @@ public class ConnectionHandler implements Runnable {
                 data[i-1] = Integer.parseInt(tok[i]);
             
             if(buffer.setdata(data)) {
-                response.send("OK");
+                response.send("Produccion exitosa");
             }
             else {
-                response.send("wait");
+                response.send("Esperando");
             }
             
             return;
