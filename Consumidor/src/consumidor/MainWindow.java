@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package productor;
+package consumidor;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -11,8 +11,6 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Random;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 /**
@@ -26,13 +24,13 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
      */
     public MainWindow() {
         initComponents();
-
+        
         arrayLabel.setText("");
         stateLabel.setText("");
 
         r = new Random();
     }
-
+    
     private String serverip;
     private Socket cliente;
     private DataInputStream input;
@@ -41,6 +39,11 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
     private String query;
     private String response;
     private Thread t;
+    
+    @Override
+    public void run() {
+        
+    }
 
     private void setState(String m) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -60,52 +63,7 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
         });
     }
 
-    @Override
-    public void run() {
-        while (true) {
-            query = "POST ";
-            String strarr = "";
-
-            for (int i = 0; i < 5; i++) {
-                int a = 1 + r.nextInt(100);
-                strarr += a + " ";
-            }
-
-            query += strarr;
-
-            setArray(strarr);
-            
-            try {
-                
-                do {
-
-                    output.writeUTF(query);
-
-                    output.flush();
-
-                    response = input.readUTF();
-
-                    setState(response);
-
-                    Thread.sleep(500 + r.nextInt(1000));
-                } while (response.equals("Esperando"));
-                
-            } catch (IOException ex) {
-                setState("Error de conexion");
-                t.stop();
-                
-            } catch (InterruptedException ex) {
-                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -117,13 +75,13 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
 
         jLabel1 = new javax.swing.JLabel();
         arrayLabel = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         stateLabel = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
         iptext = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Productor");
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(500, 300));
         setMinimumSize(new java.awt.Dimension(500, 300));
@@ -132,13 +90,15 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
         setSize(new java.awt.Dimension(500, 300));
         setType(java.awt.Window.Type.UTILITY);
 
-        jLabel1.setText("Producido: ");
+        jLabel1.setText("Consumido: ");
 
         arrayLabel.setText("arrayLabel");
 
+        stateLabel.setText("stateLabel");
+
         jLabel2.setText("Estado: ");
 
-        stateLabel.setText("stateLabel");
+        iptext.setText("127.0.0.1");
 
         jButton1.setText("Comenzar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -147,14 +107,12 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
             }
         });
 
-        iptext.setText("127.0.0.1");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(106, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(iptext, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -168,7 +126,7 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(stateLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE)
                             .addComponent(arrayLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,7 +139,7 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(stateLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 119, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1)
                     .addComponent(iptext, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -190,7 +148,6 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // obtener ip
         serverip = iptext.getText();
@@ -208,7 +165,7 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
             // Comenzar a producir
             t = new Thread(this);
             t.start();
-            
+
         } catch (IOException ex) {
             setState("No se pudo conectar al servidor " + serverip);
         }
@@ -244,8 +201,7 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                MainWindow m = new MainWindow();
-                m.setVisible(true);
+                new MainWindow().setVisible(true);
             }
         });
     }
@@ -258,4 +214,5 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel stateLabel;
     // End of variables declaration//GEN-END:variables
+
 }
