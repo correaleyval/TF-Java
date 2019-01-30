@@ -16,20 +16,32 @@ import java.util.StringTokenizer;
 public class Request {
     private final BufferedReader in;
     
-    public final String method;
-    public final String url;
+    public String method;
+    public String url;
+    public String input;
     
     Request(Socket s) throws IOException {
 
         in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             
-        String input = in.readLine();
+        input = in.readLine();
+        
+        try {
+            StringTokenizer parse = new StringTokenizer(input);
             
-        StringTokenizer parse = new StringTokenizer(input);
-            
-        method = parse.nextToken().toUpperCase();
+            method = parse.nextToken().toUpperCase();
            
-        url = parse.nextToken().toLowerCase();
+            url = parse.nextToken().toLowerCase();
+        }
+        catch(Exception e) {
+            input = "GET / HTTP/1.1";
+            
+            StringTokenizer parse = new StringTokenizer(input);
+            
+            method = parse.nextToken().toUpperCase();
+           
+            url = parse.nextToken().toLowerCase();
+        }
     }
     
     public void close() throws IOException {

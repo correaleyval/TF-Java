@@ -21,14 +21,19 @@ public class Intermedio {
     }
     
     private ConnectionHandler handler;
-    
+    private final BufferIntermedio b;
+
+    public Intermedio() {
+        this.b = new BufferIntermedio();
+    }
+        
     public void listen(int port) throws IOException {
         ServerSocket serverConnect = new ServerSocket(port);
         System.out.println("Proceso intermedio escuchando en el puerto: 7777");
         
         
         while (true) {
-            handler = new ConnectionHandler(serverConnect.accept());
+            handler = new ConnectionHandler(serverConnect.accept(), b);
 
             Thread thread = new Thread(handler);
             thread.start();
