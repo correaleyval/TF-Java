@@ -1,21 +1,37 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package intermedio;
 
 /**
  *
- * @author ragnar
+ * @author Luis Correa Leyva
+ * @email correaleyval@gmail.com
+ * 
  */
 public class Intermedio {
+    
+    // Definicion del objeto buffer para el proceso Intermedio
+    public static class Buffer {
+        enum ESTADO {VACIO, DESORD, ORD};
+        
+        ESTADO statevar;        
+        public static int[] fiveint;
 
+        private Buffer() {
+            this.fiveint = new int[5];
+            statevar = ESTADO.VACIO;
+        }
+    }
+    
+    
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
-        System.out.printf(" Proceso Intermedio\n");
+        new Buffer();  // inicializar buffer      
+        
+        System.out.println(" Proceso Intermedio");
+        System.out.println(Buffer.fiveint[0]);
     }
     
 }
