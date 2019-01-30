@@ -1,0 +1,2589 @@
+:- Subproceso para ordenamiento ejecutandose
+Proceso intermedio escuchando en el puerto: 7777
+Conexion recibida de: 10.42.0.2
+GET from 10.42.0.2
+VACIO
+[0, 0, 0, 0, 0]
+GET from 10.42.0.2
+VACIO
+[0, 0, 0, 0, 0]
+GET from 10.42.0.2
+VACIO
+[0, 0, 0, 0, 0]
+GET from 10.42.0.2
+VACIO
+[0, 0, 0, 0, 0]
+GET from 10.42.0.2
+VACIO
+[0, 0, 0, 0, 0]
+Conexion recibida de: 10.42.0.2
+POST 13 7 65 18 55  from 10.42.0.2
+VACIO
+[0, 0, 0, 0, 0]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[7, 13, 18, 55, 65]
+POST 22 58 83 48 2  from 10.42.0.2
+VACIO
+[7, 13, 18, 55, 65]
+GET from 10.42.0.2
+DESORD
+[22, 58, 83, 48, 2]
+:-    Array Sorted
+POST 76 74 46 81 100  from 10.42.0.2
+ORD
+[2, 22, 48, 58, 83]
+GET from 10.42.0.2
+ORD
+[2, 22, 48, 58, 83]
+Conexion recibida de: 10.42.0.2
+POST 10 47 27 5 50  from 10.42.0.2
+VACIO
+[2, 22, 48, 58, 83]
+POST 76 74 46 81 100  from 10.42.0.2
+DESORD
+[10, 47, 27, 5, 50]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[5, 10, 27, 47, 50]
+POST 7 30 28 47 26  from 10.42.0.2
+VACIO
+[5, 10, 27, 47, 50]
+POST 76 74 46 81 100  from 10.42.0.2
+DESORD
+[7, 30, 28, 47, 26]
+:-    Array Sorted
+Conexion recibida de: 10.42.0.2
+GET from 10.42.0.2
+ORD
+[7, 26, 28, 30, 47]
+POST 76 74 46 81 100  from 10.42.0.2
+VACIO
+[7, 26, 28, 30, 47]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[46, 74, 76, 81, 100]
+POST 97 41 20 35 25  from 10.42.0.2
+VACIO
+[46, 74, 76, 81, 100]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[20, 25, 35, 41, 97]
+GET from 10.42.0.2
+VACIO
+[20, 25, 35, 41, 97]
+POST 9 17 85 43 10  from 10.42.0.2
+VACIO
+[20, 25, 35, 41, 97]
+GET from 10.42.0.2
+DESORD
+[9, 17, 85, 43, 10]
+POST 58 85 92 46 39  from 10.42.0.2
+DESORD
+[9, 17, 85, 43, 10]
+:-    Array Sorted
+Conexion recibida de: 10.42.0.2
+POST 61 80 30 7 4  from 10.42.0.2
+ORD
+[9, 10, 17, 43, 85]
+GET from 10.42.0.2
+ORD
+[9, 10, 17, 43, 85]
+POST 38 20 5 76 83  from 10.42.0.2
+VACIO
+[9, 10, 17, 43, 85]
+GET from 10.42.0.2
+DESORD
+[38, 20, 5, 76, 83]
+POST 58 85 92 46 39  from 10.42.0.2
+DESORD
+[38, 20, 5, 76, 83]
+:-    Array Sorted
+POST 61 80 30 7 4  from 10.42.0.2
+ORD
+[5, 20, 38, 76, 83]
+POST 58 85 92 46 39  from 10.42.0.2
+ORD
+[5, 20, 38, 76, 83]
+GET from 10.42.0.2
+ORD
+[5, 20, 38, 76, 83]
+POST 96 53 72 62 85  from 10.42.0.2
+VACIO
+[5, 20, 38, 76, 83]
+GET from 10.42.0.2
+DESORD
+[96, 53, 72, 62, 85]
+:-    Array Sorted
+POST 58 85 92 46 39  from 10.42.0.2
+ORD
+[53, 62, 72, 85, 96]
+POST 61 80 30 7 4  from 10.42.0.2
+ORD
+[53, 62, 72, 85, 96]
+GET from 10.42.0.2
+ORD
+[53, 62, 72, 85, 96]
+GET from 10.42.0.2
+VACIO
+[53, 62, 72, 85, 96]
+POST 61 80 30 7 4  from 10.42.0.2
+VACIO
+[53, 62, 72, 85, 96]
+:-    Array Sorted
+POST 58 85 92 46 39  from 10.42.0.2
+ORD
+[4, 7, 30, 61, 80]
+POST 17 77 95 81 28  from 10.42.0.2
+ORD
+[4, 7, 30, 61, 80]
+GET from 10.42.0.2
+ORD
+[4, 7, 30, 61, 80]
+GET from 10.42.0.2
+VACIO
+[4, 7, 30, 61, 80]
+Conexion recibida de: 10.42.0.2
+GET from 10.42.0.2
+VACIO
+[4, 7, 30, 61, 80]
+POST 80 69 54 26 88  from 10.42.0.2
+VACIO
+[4, 7, 30, 61, 80]
+POST 58 85 92 46 39  from 10.42.0.2
+DESORD
+[80, 69, 54, 26, 88]
+POST 17 77 95 81 28  from 10.42.0.2
+DESORD
+[80, 69, 54, 26, 88]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[26, 54, 69, 80, 88]
+GET from 10.42.0.2
+VACIO
+[26, 54, 69, 80, 88]
+GET from 10.42.0.2
+VACIO
+[26, 54, 69, 80, 88]
+POST 58 85 92 46 39  from 10.42.0.2
+VACIO
+[26, 54, 69, 80, 88]
+POST 58 98 92 18 6  from 10.42.0.2
+DESORD
+[58, 85, 92, 46, 39]
+:-    Array Sorted
+POST 17 77 95 81 28  from 10.42.0.2
+ORD
+[39, 46, 58, 85, 92]
+GET from 10.42.0.2
+ORD
+[39, 46, 58, 85, 92]
+GET from 10.42.0.2
+VACIO
+[39, 46, 58, 85, 92]
+POST 58 98 92 18 6  from 10.42.0.2
+VACIO
+[39, 46, 58, 85, 92]
+GET from 10.42.0.2
+DESORD
+[58, 98, 92, 18, 6]
+POST 85 100 59 81 25  from 10.42.0.2
+DESORD
+[58, 98, 92, 18, 6]
+POST 17 77 95 81 28  from 10.42.0.2
+DESORD
+[58, 98, 92, 18, 6]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[6, 18, 58, 92, 98]
+GET from 10.42.0.2
+VACIO
+[6, 18, 58, 92, 98]
+POST 17 77 95 81 28  from 10.42.0.2
+VACIO
+[6, 18, 58, 92, 98]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[17, 28, 77, 81, 95]
+GET from 10.42.0.2
+VACIO
+[17, 28, 77, 81, 95]
+POST 85 100 59 81 25  from 10.42.0.2
+VACIO
+[17, 28, 77, 81, 95]
+POST 28 99 38 56 20  from 10.42.0.2
+DESORD
+[85, 100, 59, 81, 25]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[25, 59, 81, 85, 100]
+GET from 10.42.0.2
+VACIO
+[25, 59, 81, 85, 100]
+POST 75 31 75 68 58  from 10.42.0.2
+VACIO
+[25, 59, 81, 85, 100]
+GET from 10.42.0.2
+DESORD
+[75, 31, 75, 68, 58]
+:-    Array Sorted
+POST 28 99 38 56 20  from 10.42.0.2
+ORD
+[31, 58, 68, 75, 75]
+POST 75 25 100 52 45  from 10.42.0.2
+ORD
+[31, 58, 68, 75, 75]
+GET from 10.42.0.2
+ORD
+[31, 58, 68, 75, 75]
+GET from 10.42.0.2
+VACIO
+[31, 58, 68, 75, 75]
+POST 75 25 100 52 45  from 10.42.0.2
+VACIO
+[31, 58, 68, 75, 75]
+GET from 10.42.0.2
+DESORD
+[75, 25, 100, 52, 45]
+GET from 10.42.0.2
+DESORD
+[75, 25, 100, 52, 45]
+POST 28 99 38 56 20  from 10.42.0.2
+DESORD
+[75, 25, 100, 52, 45]
+:-    Array Sorted
+POST 53 3 52 17 39  from 10.42.0.2
+ORD
+[25, 45, 52, 75, 100]
+GET from 10.42.0.2
+ORD
+[25, 45, 52, 75, 100]
+GET from 10.42.0.2
+VACIO
+[25, 45, 52, 75, 100]
+POST 28 99 38 56 20  from 10.42.0.2
+VACIO
+[25, 45, 52, 75, 100]
+POST 39 51 4 64 83  from 10.42.0.2
+DESORD
+[28, 99, 38, 56, 20]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[20, 28, 38, 56, 99]
+POST 53 3 52 17 39  from 10.42.0.2
+VACIO
+[20, 28, 38, 56, 99]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[3, 17, 39, 52, 53]
+POST 39 51 4 64 83  from 10.42.0.2
+VACIO
+[3, 17, 39, 52, 53]
+GET from 10.42.0.2
+DESORD
+[39, 51, 4, 64, 83]
+:-    Array Sorted
+POST 25 82 98 16 34  from 10.42.0.2
+ORD
+[4, 39, 51, 64, 83]
+POST 60 78 74 63 53  from 10.42.0.2
+ORD
+[4, 39, 51, 64, 83]
+GET from 10.42.0.2
+ORD
+[4, 39, 51, 64, 83]
+GET from 10.42.0.2
+VACIO
+[4, 39, 51, 64, 83]
+POST 87 60 36 47 25  from 10.42.0.2
+VACIO
+[4, 39, 51, 64, 83]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[25, 36, 47, 60, 87]
+POST 25 82 98 16 34  from 10.42.0.2
+VACIO
+[25, 36, 47, 60, 87]
+POST 60 78 74 63 53  from 10.42.0.2
+DESORD
+[25, 82, 98, 16, 34]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[16, 25, 34, 82, 98]
+POST 5 20 36 87 19  from 10.42.0.2
+VACIO
+[16, 25, 34, 82, 98]
+:-    Array Sorted
+POST 60 78 74 63 53  from 10.42.0.2
+ORD
+[5, 19, 20, 36, 87]
+GET from 10.42.0.2
+ORD
+[5, 19, 20, 36, 87]
+POST 25 58 31 68 14  from 10.42.0.2
+VACIO
+[5, 19, 20, 36, 87]
+GET from 10.42.0.2
+DESORD
+[25, 58, 31, 68, 14]
+:-    Array Sorted
+POST 14 15 99 15 14  from 10.42.0.2
+ORD
+[14, 25, 31, 58, 68]
+GET from 10.42.0.2
+ORD
+[14, 25, 31, 58, 68]
+GET from 10.42.0.2
+VACIO
+[14, 25, 31, 58, 68]
+GET from 10.42.0.2
+VACIO
+[14, 25, 31, 58, 68]
+POST 60 78 74 63 53  from 10.42.0.2
+VACIO
+[14, 25, 31, 58, 68]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[53, 60, 63, 74, 78]
+POST 15 68 38 51 34  from 10.42.0.2
+VACIO
+[53, 60, 63, 74, 78]
+:-    Array Sorted
+POST 14 15 99 15 14  from 10.42.0.2
+ORD
+[15, 34, 38, 51, 68]
+GET from 10.42.0.2
+ORD
+[15, 34, 38, 51, 68]
+GET from 10.42.0.2
+VACIO
+[15, 34, 38, 51, 68]
+GET from 10.42.0.2
+VACIO
+[15, 34, 38, 51, 68]
+POST 23 57 96 80 64  from 10.42.0.2
+VACIO
+[15, 34, 38, 51, 68]
+GET from 10.42.0.2
+DESORD
+[23, 57, 96, 80, 64]
+:-    Array Sorted
+POST 14 15 99 15 14  from 10.42.0.2
+ORD
+[23, 57, 64, 80, 96]
+POST 92 3 30 47 36  from 10.42.0.2
+ORD
+[23, 57, 64, 80, 96]
+GET from 10.42.0.2
+ORD
+[23, 57, 64, 80, 96]
+GET from 10.42.0.2
+VACIO
+[23, 57, 64, 80, 96]
+POST 14 15 99 15 14  from 10.42.0.2
+VACIO
+[23, 57, 64, 80, 96]
+GET from 10.42.0.2
+DESORD
+[14, 15, 99, 15, 14]
+:-    Array Sorted
+POST 53 54 37 23 8  from 10.42.0.2
+ORD
+[14, 14, 15, 15, 99]
+GET from 10.42.0.2
+ORD
+[14, 14, 15, 15, 99]
+GET from 10.42.0.2
+VACIO
+[14, 14, 15, 15, 99]
+POST 92 3 30 47 36  from 10.42.0.2
+VACIO
+[14, 14, 15, 15, 99]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[3, 30, 36, 47, 92]
+POST 53 54 37 23 8  from 10.42.0.2
+VACIO
+[3, 30, 36, 47, 92]
+POST 36 8 31 19 19  from 10.42.0.2
+DESORD
+[53, 54, 37, 23, 8]
+GET from 10.42.0.2
+DESORD
+[53, 54, 37, 23, 8]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[8, 23, 37, 53, 54]
+POST 36 8 31 19 19  from 10.42.0.2
+VACIO
+[8, 23, 37, 53, 54]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[8, 19, 19, 31, 36]
+GET from 10.42.0.2
+VACIO
+[8, 19, 19, 31, 36]
+POST 93 62 26 18 59  from 10.42.0.2
+VACIO
+[8, 19, 19, 31, 36]
+POST 27 63 9 51 62  from 10.42.0.2
+DESORD
+[93, 62, 26, 18, 59]
+:-    Array Sorted
+POST 13 39 56 40 32  from 10.42.0.2
+ORD
+[18, 26, 59, 62, 93]
+GET from 10.42.0.2
+ORD
+[18, 26, 59, 62, 93]
+GET from 10.42.0.2
+VACIO
+[18, 26, 59, 62, 93]
+GET from 10.42.0.2
+VACIO
+[18, 26, 59, 62, 93]
+POST 92 94 8 38 34  from 10.42.0.2
+VACIO
+[18, 26, 59, 62, 93]
+POST 27 63 9 51 62  from 10.42.0.2
+DESORD
+[92, 94, 8, 38, 34]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[8, 34, 38, 92, 94]
+POST 13 39 56 40 32  from 10.42.0.2
+VACIO
+[8, 34, 38, 92, 94]
+POST 27 63 9 51 62  from 10.42.0.2
+DESORD
+[13, 39, 56, 40, 32]
+GET from 10.42.0.2
+DESORD
+[13, 39, 56, 40, 32]
+GET from 10.42.0.2
+DESORD
+[13, 39, 56, 40, 32]
+:-    Array Sorted
+POST 34 9 20 96 50  from 10.42.0.2
+ORD
+[13, 32, 39, 40, 56]
+GET from 10.42.0.2
+ORD
+[13, 32, 39, 40, 56]
+GET from 10.42.0.2
+VACIO
+[13, 32, 39, 40, 56]
+GET from 10.42.0.2
+VACIO
+[13, 32, 39, 40, 56]
+POST 27 63 9 51 62  from 10.42.0.2
+VACIO
+[13, 32, 39, 40, 56]
+POST 34 9 20 96 50  from 10.42.0.2
+DESORD
+[27, 63, 9, 51, 62]
+:-    Array Sorted
+POST 62 87 76 89 74  from 10.42.0.2
+ORD
+[9, 27, 51, 62, 63]
+GET from 10.42.0.2
+ORD
+[9, 27, 51, 62, 63]
+GET from 10.42.0.2
+VACIO
+[9, 27, 51, 62, 63]
+GET from 10.42.0.2
+VACIO
+[9, 27, 51, 62, 63]
+POST 62 87 76 89 74  from 10.42.0.2
+VACIO
+[9, 27, 51, 62, 63]
+:-    Array Sorted
+POST 34 9 20 96 50  from 10.42.0.2
+ORD
+[62, 74, 76, 87, 89]
+GET from 10.42.0.2
+ORD
+[62, 74, 76, 87, 89]
+GET from 10.42.0.2
+VACIO
+[62, 74, 76, 87, 89]
+POST 87 70 9 99 9  from 10.42.0.2
+VACIO
+[62, 74, 76, 87, 89]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[9, 9, 70, 87, 99]
+POST 34 9 20 96 50  from 10.42.0.2
+VACIO
+[9, 9, 70, 87, 99]
+POST 46 63 6 72 9  from 10.42.0.2
+DESORD
+[34, 9, 20, 96, 50]
+GET from 10.42.0.2
+DESORD
+[34, 9, 20, 96, 50]
+GET from 10.42.0.2
+DESORD
+[34, 9, 20, 96, 50]
+POST 53 51 15 41 77  from 10.42.0.2
+DESORD
+[34, 9, 20, 96, 50]
+:-    Array Sorted
+POST 46 63 6 72 9  from 10.42.0.2
+ORD
+[9, 20, 34, 50, 96]
+GET from 10.42.0.2
+ORD
+[9, 20, 34, 50, 96]
+GET from 10.42.0.2
+VACIO
+[9, 20, 34, 50, 96]
+GET from 10.42.0.2
+VACIO
+[9, 20, 34, 50, 96]
+POST 41 12 36 52 78  from 10.42.0.2
+VACIO
+[9, 20, 34, 50, 96]
+POST 53 51 15 41 77  from 10.42.0.2
+DESORD
+[41, 12, 36, 52, 78]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[12, 36, 41, 52, 78]
+POST 46 63 6 72 9  from 10.42.0.2
+VACIO
+[12, 36, 41, 52, 78]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[6, 9, 46, 63, 72]
+GET from 10.42.0.2
+VACIO
+[6, 9, 46, 63, 72]
+POST 53 51 15 41 77  from 10.42.0.2
+VACIO
+[6, 9, 46, 63, 72]
+POST 8 8 74 55 36  from 10.42.0.2
+DESORD
+[53, 51, 15, 41, 77]
+GET from 10.42.0.2
+DESORD
+[53, 51, 15, 41, 77]
+POST 26 17 85 68 41  from 10.42.0.2
+DESORD
+[53, 51, 15, 41, 77]
+:-    Array Sorted
+POST 8 8 74 55 36  from 10.42.0.2
+ORD
+[15, 41, 51, 53, 77]
+GET from 10.42.0.2
+ORD
+[15, 41, 51, 53, 77]
+GET from 10.42.0.2
+VACIO
+[15, 41, 51, 53, 77]
+GET from 10.42.0.2
+VACIO
+[15, 41, 51, 53, 77]
+POST 26 17 85 68 41  from 10.42.0.2
+VACIO
+[15, 41, 51, 53, 77]
+:-    Array Sorted
+POST 8 8 74 55 36  from 10.42.0.2
+ORD
+[17, 26, 41, 68, 85]
+POST 48 22 74 43 48  from 10.42.0.2
+ORD
+[17, 26, 41, 68, 85]
+GET from 10.42.0.2
+ORD
+[17, 26, 41, 68, 85]
+GET from 10.42.0.2
+VACIO
+[17, 26, 41, 68, 85]
+GET from 10.42.0.2
+VACIO
+[17, 26, 41, 68, 85]
+GET from 10.42.0.2
+VACIO
+[17, 26, 41, 68, 85]
+POST 92 34 87 85 57  from 10.42.0.2
+VACIO
+[17, 26, 41, 68, 85]
+POST 8 8 74 55 36  from 10.42.0.2
+DESORD
+[92, 34, 87, 85, 57]
+:-    Array Sorted
+POST 48 22 74 43 48  from 10.42.0.2
+ORD
+[34, 57, 85, 87, 92]
+GET from 10.42.0.2
+ORD
+[34, 57, 85, 87, 92]
+GET from 10.42.0.2
+VACIO
+[34, 57, 85, 87, 92]
+GET from 10.42.0.2
+VACIO
+[34, 57, 85, 87, 92]
+POST 8 8 74 55 36  from 10.42.0.2
+VACIO
+[34, 57, 85, 87, 92]
+POST 37 99 71 62 34  from 10.42.0.2
+DESORD
+[8, 8, 74, 55, 36]
+:-    Array Sorted
+POST 48 22 74 43 48  from 10.42.0.2
+ORD
+[8, 8, 36, 55, 74]
+POST 37 99 71 62 34  from 10.42.0.2
+ORD
+[8, 8, 36, 55, 74]
+GET from 10.42.0.2
+ORD
+[8, 8, 36, 55, 74]
+GET from 10.42.0.2
+VACIO
+[8, 8, 36, 55, 74]
+GET from 10.42.0.2
+VACIO
+[8, 8, 36, 55, 74]
+POST 48 22 74 43 48  from 10.42.0.2
+VACIO
+[8, 8, 36, 55, 74]
+POST 37 99 71 62 34  from 10.42.0.2
+DESORD
+[48, 22, 74, 43, 48]
+POST 98 46 68 1 50  from 10.42.0.2
+DESORD
+[48, 22, 74, 43, 48]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[22, 43, 48, 48, 74]
+GET from 10.42.0.2
+VACIO
+[22, 43, 48, 48, 74]
+GET from 10.42.0.2
+VACIO
+[22, 43, 48, 48, 74]
+POST 19 91 9 99 47  from 10.42.0.2
+VACIO
+[22, 43, 48, 48, 74]
+:-    Array Sorted
+POST 37 99 71 62 34  from 10.42.0.2
+ORD
+[9, 19, 47, 91, 99]
+GET from 10.42.0.2
+ORD
+[9, 19, 47, 91, 99]
+GET from 10.42.0.2
+VACIO
+[9, 19, 47, 91, 99]
+POST 98 46 68 1 50  from 10.42.0.2
+VACIO
+[9, 19, 47, 91, 99]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[1, 46, 50, 68, 98]
+POST 37 99 71 62 34  from 10.42.0.2
+VACIO
+[1, 46, 50, 68, 98]
+GET from 10.42.0.2
+DESORD
+[37, 99, 71, 62, 34]
+POST 10 28 68 78 49  from 10.42.0.2
+DESORD
+[37, 99, 71, 62, 34]
+:-    Array Sorted
+POST 40 90 34 97 75  from 10.42.0.2
+ORD
+[34, 37, 62, 71, 99]
+GET from 10.42.0.2
+ORD
+[34, 37, 62, 71, 99]
+GET from 10.42.0.2
+VACIO
+[34, 37, 62, 71, 99]
+POST 10 28 68 78 49  from 10.42.0.2
+VACIO
+[34, 37, 62, 71, 99]
+:-    Array Sorted
+POST 40 90 34 97 75  from 10.42.0.2
+ORD
+[10, 28, 49, 68, 78]
+GET from 10.42.0.2
+ORD
+[10, 28, 49, 68, 78]
+POST 45 23 26 48 64  from 10.42.0.2
+VACIO
+[10, 28, 49, 68, 78]
+GET from 10.42.0.2
+DESORD
+[45, 23, 26, 48, 64]
+:-    Array Sorted
+POST 40 90 34 97 75  from 10.42.0.2
+ORD
+[23, 26, 45, 48, 64]
+GET from 10.42.0.2
+ORD
+[23, 26, 45, 48, 64]
+GET from 10.42.0.2
+VACIO
+[23, 26, 45, 48, 64]
+POST 44 98 13 55 84  from 10.42.0.2
+VACIO
+[23, 26, 45, 48, 64]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[13, 44, 55, 84, 98]
+POST 7 45 25 49 62  from 10.42.0.2
+VACIO
+[13, 44, 55, 84, 98]
+GET from 10.42.0.2
+DESORD
+[7, 45, 25, 49, 62]
+:-    Array Sorted
+POST 40 90 34 97 75  from 10.42.0.2
+ORD
+[7, 25, 45, 49, 62]
+GET from 10.42.0.2
+ORD
+[7, 25, 45, 49, 62]
+POST 66 7 88 82 9  from 10.42.0.2
+VACIO
+[7, 25, 45, 49, 62]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[7, 9, 66, 82, 88]
+GET from 10.42.0.2
+VACIO
+[7, 9, 66, 82, 88]
+POST 40 90 34 97 75  from 10.42.0.2
+VACIO
+[7, 9, 66, 82, 88]
+:-    Array Sorted
+POST 61 36 39 88 44  from 10.42.0.2
+ORD
+[34, 40, 75, 90, 97]
+GET from 10.42.0.2
+ORD
+[34, 40, 75, 90, 97]
+GET from 10.42.0.2
+VACIO
+[34, 40, 75, 90, 97]
+GET from 10.42.0.2
+VACIO
+[34, 40, 75, 90, 97]
+POST 26 62 8 34 2  from 10.42.0.2
+VACIO
+[34, 40, 75, 90, 97]
+POST 61 36 39 88 44  from 10.42.0.2
+DESORD
+[26, 62, 8, 34, 2]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[2, 8, 26, 34, 62]
+GET from 10.42.0.2
+VACIO
+[2, 8, 26, 34, 62]
+POST 86 15 25 31 100  from 10.42.0.2
+VACIO
+[2, 8, 26, 34, 62]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[15, 25, 31, 86, 100]
+GET from 10.42.0.2
+VACIO
+[15, 25, 31, 86, 100]
+POST 61 36 39 88 44  from 10.42.0.2
+VACIO
+[15, 25, 31, 86, 100]
+GET from 10.42.0.2
+DESORD
+[61, 36, 39, 88, 44]
+POST 40 86 86 64 46  from 10.42.0.2
+DESORD
+[61, 36, 39, 88, 44]
+:-    Array Sorted
+POST 14 98 56 22 80  from 10.42.0.2
+ORD
+[36, 39, 44, 61, 88]
+GET from 10.42.0.2
+ORD
+[36, 39, 44, 61, 88]
+GET from 10.42.0.2
+VACIO
+[36, 39, 44, 61, 88]
+POST 14 98 56 22 80  from 10.42.0.2
+VACIO
+[36, 39, 44, 61, 88]
+POST 40 86 86 64 46  from 10.42.0.2
+DESORD
+[14, 98, 56, 22, 80]
+GET from 10.42.0.2
+DESORD
+[14, 98, 56, 22, 80]
+:-    Array Sorted
+POST 36 36 81 93 15  from 10.42.0.2
+ORD
+[14, 22, 56, 80, 98]
+GET from 10.42.0.2
+ORD
+[14, 22, 56, 80, 98]
+GET from 10.42.0.2
+VACIO
+[14, 22, 56, 80, 98]
+POST 40 86 86 64 46  from 10.42.0.2
+VACIO
+[14, 22, 56, 80, 98]
+GET from 10.42.0.2
+DESORD
+[40, 86, 86, 64, 46]
+:-    Array Sorted
+POST 2 61 61 98 69  from 10.42.0.2
+ORD
+[40, 46, 64, 86, 86]
+GET from 10.42.0.2
+ORD
+[40, 46, 64, 86, 86]
+Conexion recibida de: 10.42.0.2
+POST 91 85 66 98 13  from 10.42.0.2
+VACIO
+[40, 46, 64, 86, 86]
+:-    Array Sorted
+POST 36 36 81 93 15  from 10.42.0.2
+ORD
+[13, 66, 85, 91, 98]
+POST 6 8 9 20 22  from 10.42.0.2
+ORD
+[13, 66, 85, 91, 98]
+GET from 10.42.0.2
+ORD
+[13, 66, 85, 91, 98]
+POST 2 61 61 98 69  from 10.42.0.2
+VACIO
+[13, 66, 85, 91, 98]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[2, 61, 61, 69, 98]
+GET from 10.42.0.2
+VACIO
+[2, 61, 61, 69, 98]
+POST 36 36 81 93 15  from 10.42.0.2
+VACIO
+[2, 61, 61, 69, 98]
+POST 21 92 22 47 54  from 10.42.0.2
+DESORD
+[36, 36, 81, 93, 15]
+:-    Array Sorted
+POST 6 8 9 20 22  from 10.42.0.2
+ORD
+[15, 36, 36, 81, 93]
+GET from 10.42.0.2
+ORD
+[15, 36, 36, 81, 93]
+GET from 10.42.0.2
+VACIO
+[15, 36, 36, 81, 93]
+POST 57 2 98 6 9  from 10.42.0.2
+VACIO
+[15, 36, 36, 81, 93]
+POST 21 92 22 47 54  from 10.42.0.2
+DESORD
+[57, 2, 98, 6, 9]
+:-    Array Sorted
+POST 6 8 9 20 22  from 10.42.0.2
+ORD
+[2, 6, 9, 57, 98]
+GET from 10.42.0.2
+ORD
+[2, 6, 9, 57, 98]
+POST 89 58 63 47 4  from 10.42.0.2
+VACIO
+[2, 6, 9, 57, 98]
+GET from 10.42.0.2
+DESORD
+[89, 58, 63, 47, 4]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[4, 47, 58, 63, 89]
+POST 6 8 9 20 22  from 10.42.0.2
+VACIO
+[4, 47, 58, 63, 89]
+POST 21 92 22 47 54  from 10.42.0.2
+DESORD
+[6, 8, 9, 20, 22]
+GET from 10.42.0.2
+DESORD
+[6, 8, 9, 20, 22]
+:-    Array Sorted
+POST 77 45 19 33 88  from 10.42.0.2
+ORD
+[6, 8, 9, 20, 22]
+GET from 10.42.0.2
+ORD
+[6, 8, 9, 20, 22]
+POST 52 14 15 75 57  from 10.42.0.2
+VACIO
+[6, 8, 9, 20, 22]
+:-    Array Sorted
+POST 21 92 22 47 54  from 10.42.0.2
+ORD
+[14, 15, 52, 57, 75]
+GET from 10.42.0.2
+ORD
+[14, 15, 52, 57, 75]
+GET from 10.42.0.2
+VACIO
+[14, 15, 52, 57, 75]
+POST 77 45 19 33 88  from 10.42.0.2
+VACIO
+[14, 15, 52, 57, 75]
+GET from 10.42.0.2
+DESORD
+[77, 45, 19, 33, 88]
+:-    Array Sorted
+POST 17 75 45 61 100  from 10.42.0.2
+ORD
+[19, 33, 45, 77, 88]
+POST 100 87 1 8 90  from 10.42.0.2
+ORD
+[19, 33, 45, 77, 88]
+POST 21 92 22 47 54  from 10.42.0.2
+ORD
+[19, 33, 45, 77, 88]
+GET from 10.42.0.2
+ORD
+[19, 33, 45, 77, 88]
+GET from 10.42.0.2
+VACIO
+[19, 33, 45, 77, 88]
+GET from 10.42.0.2
+VACIO
+[19, 33, 45, 77, 88]
+POST 100 87 1 8 90  from 10.42.0.2
+VACIO
+[19, 33, 45, 77, 88]
+POST 17 75 45 61 100  from 10.42.0.2
+DESORD
+[100, 87, 1, 8, 90]
+POST 95 76 2 29 64  from 10.42.0.2
+DESORD
+[100, 87, 1, 8, 90]
+:-    Array Sorted
+POST 21 92 22 47 54  from 10.42.0.2
+ORD
+[1, 8, 87, 90, 100]
+GET from 10.42.0.2
+ORD
+[1, 8, 87, 90, 100]
+GET from 10.42.0.2
+VACIO
+[1, 8, 87, 90, 100]
+POST 95 76 2 29 64  from 10.42.0.2
+VACIO
+[1, 8, 87, 90, 100]
+GET from 10.42.0.2
+DESORD
+[95, 76, 2, 29, 64]
+POST 17 75 45 61 100  from 10.42.0.2
+DESORD
+[95, 76, 2, 29, 64]
+:-    Array Sorted
+POST 21 92 22 47 54  from 10.42.0.2
+ORD
+[2, 29, 64, 76, 95]
+GET from 10.42.0.2
+ORD
+[2, 29, 64, 76, 95]
+GET from 10.42.0.2
+VACIO
+[2, 29, 64, 76, 95]
+POST 35 74 78 44 54  from 10.42.0.2
+VACIO
+[2, 29, 64, 76, 95]
+:-    Array Sorted
+POST 21 92 22 47 54  from 10.42.0.2
+ORD
+[35, 44, 54, 74, 78]
+POST 65 91 62 14 7  from 10.42.0.2
+ORD
+[35, 44, 54, 74, 78]
+GET from 10.42.0.2
+ORD
+[35, 44, 54, 74, 78]
+GET from 10.42.0.2
+VACIO
+[35, 44, 54, 74, 78]
+POST 17 75 45 61 100  from 10.42.0.2
+VACIO
+[35, 44, 54, 74, 78]
+GET from 10.42.0.2
+DESORD
+[17, 75, 45, 61, 100]
+:-    Array Sorted
+POST 65 91 62 14 7  from 10.42.0.2
+ORD
+[17, 45, 61, 75, 100]
+POST 54 1 13 15 19  from 10.42.0.2
+ORD
+[17, 45, 61, 75, 100]
+GET from 10.42.0.2
+ORD
+[17, 45, 61, 75, 100]
+GET from 10.42.0.2
+VACIO
+[17, 45, 61, 75, 100]
+POST 21 92 22 47 54  from 10.42.0.2
+VACIO
+[17, 45, 61, 75, 100]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[21, 22, 47, 54, 92]
+POST 54 1 13 15 19  from 10.42.0.2
+VACIO
+[21, 22, 47, 54, 92]
+POST 65 91 62 14 7  from 10.42.0.2
+DESORD
+[54, 1, 13, 15, 19]
+:-    Array Sorted
+POST 36 78 43 78 29  from 10.42.0.2
+ORD
+[1, 13, 15, 19, 54]
+GET from 10.42.0.2
+ORD
+[1, 13, 15, 19, 54]
+GET from 10.42.0.2
+VACIO
+[1, 13, 15, 19, 54]
+POST 35 95 3 10 33  from 10.42.0.2
+VACIO
+[1, 13, 15, 19, 54]
+POST 65 91 62 14 7  from 10.42.0.2
+DESORD
+[35, 95, 3, 10, 33]
+GET from 10.42.0.2
+DESORD
+[35, 95, 3, 10, 33]
+POST 32 66 17 93 73  from 10.42.0.2
+DESORD
+[35, 95, 3, 10, 33]
+:-    Array Sorted
+POST 65 91 62 14 7  from 10.42.0.2
+ORD
+[3, 10, 33, 35, 95]
+GET from 10.42.0.2
+ORD
+[3, 10, 33, 35, 95]
+POST 36 78 43 78 29  from 10.42.0.2
+VACIO
+[3, 10, 33, 35, 95]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[29, 36, 43, 78, 78]
+GET from 10.42.0.2
+VACIO
+[29, 36, 43, 78, 78]
+POST 32 66 17 93 73  from 10.42.0.2
+VACIO
+[29, 36, 43, 78, 78]
+POST 65 91 62 14 7  from 10.42.0.2
+DESORD
+[32, 66, 17, 93, 73]
+POST 54 97 13 69 75  from 10.42.0.2
+DESORD
+[32, 66, 17, 93, 73]
+:-    Array Sorted
+POST 98 54 11 87 3  from 10.42.0.2
+ORD
+[17, 32, 66, 73, 93]
+GET from 10.42.0.2
+ORD
+[17, 32, 66, 73, 93]
+POST 65 91 62 14 7  from 10.42.0.2
+VACIO
+[17, 32, 66, 73, 93]
+GET from 10.42.0.2
+DESORD
+[65, 91, 62, 14, 7]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[7, 14, 62, 65, 91]
+POST 62 85 62 1 56  from 10.42.0.2
+ORD
+[7, 14, 62, 65, 91]
+GET from 10.42.0.2
+ORD
+[7, 14, 62, 65, 91]
+POST 98 54 11 87 3  from 10.42.0.2
+VACIO
+[7, 14, 62, 65, 91]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[3, 11, 54, 87, 98]
+POST 62 85 62 1 56  from 10.42.0.2
+ORD
+[3, 11, 54, 87, 98]
+GET from 10.42.0.2
+ORD
+[3, 11, 54, 87, 98]
+POST 40 83 36 91 55  from 10.42.0.2
+VACIO
+[3, 11, 54, 87, 98]
+GET from 10.42.0.2
+DESORD
+[40, 83, 36, 91, 55]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[36, 40, 55, 83, 91]
+POST 57 71 45 58 30  from 10.42.0.2
+ORD
+[36, 40, 55, 83, 91]
+GET from 10.42.0.2
+ORD
+[36, 40, 55, 83, 91]
+POST 62 85 62 1 56  from 10.42.0.2
+VACIO
+[36, 40, 55, 83, 91]
+GET from 10.42.0.2
+DESORD
+[62, 85, 62, 1, 56]
+POST 40 30 30 21 89  from 10.42.0.2
+DESORD
+[62, 85, 62, 1, 56]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[1, 56, 62, 62, 85]
+POST 57 71 45 58 30  from 10.42.0.2
+ORD
+[1, 56, 62, 62, 85]
+GET from 10.42.0.2
+ORD
+[1, 56, 62, 62, 85]
+POST 40 30 30 21 89  from 10.42.0.2
+VACIO
+[1, 56, 62, 62, 85]
+POST 57 37 87 23 24  from 10.42.0.2
+DESORD
+[40, 30, 30, 21, 89]
+GET from 10.42.0.2
+DESORD
+[40, 30, 30, 21, 89]
+POST 54 97 13 69 75  from 10.42.0.2
+DESORD
+[40, 30, 30, 21, 89]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[21, 30, 30, 40, 89]
+POST 57 71 45 58 30  from 10.42.0.2
+VACIO
+[21, 30, 30, 40, 89]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[30, 45, 57, 58, 71]
+GET from 10.42.0.2
+ORD
+[30, 45, 57, 58, 71]
+POST 62 80 6 79 46  from 10.42.0.2
+VACIO
+[30, 45, 57, 58, 71]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[6, 46, 62, 79, 80]
+GET from 10.42.0.2
+ORD
+[6, 46, 62, 79, 80]
+GET from 10.42.0.2
+VACIO
+[6, 46, 62, 79, 80]
+POST 57 37 87 23 24  from 10.42.0.2
+VACIO
+[6, 46, 62, 79, 80]
+:-    Array Sorted
+POST 91 22 59 95 87  from 10.42.0.2
+ORD
+[23, 24, 37, 57, 87]
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[23, 24, 37, 57, 87]
+POST 87 78 14 65 35  from 10.42.0.2
+ORD
+[23, 24, 37, 57, 87]
+GET from 10.42.0.2
+ORD
+[23, 24, 37, 57, 87]
+POST 91 22 59 95 87  from 10.42.0.2
+VACIO
+[23, 24, 37, 57, 87]
+GET from 10.42.0.2
+DESORD
+[91, 22, 59, 95, 87]
+GET from 10.42.0.2
+DESORD
+[91, 22, 59, 95, 87]
+POST 15 62 21 55 80  from 10.42.0.2
+DESORD
+[91, 22, 59, 95, 87]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[22, 59, 87, 91, 95]
+GET from 10.42.0.2
+ORD
+[22, 59, 87, 91, 95]
+POST 87 78 14 65 35  from 10.42.0.2
+VACIO
+[22, 59, 87, 91, 95]
+POST 54 97 13 69 75  from 10.42.0.2
+DESORD
+[87, 78, 14, 65, 35]
+GET from 10.42.0.2
+DESORD
+[87, 78, 14, 65, 35]
+POST 15 62 21 55 80  from 10.42.0.2
+DESORD
+[87, 78, 14, 65, 35]
+GET from 10.42.0.2
+DESORD
+[87, 78, 14, 65, 35]
+:-    Array Sorted
+POST 90 85 27 14 57  from 10.42.0.2
+ORD
+[14, 35, 65, 78, 87]
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[14, 35, 65, 78, 87]
+GET from 10.42.0.2
+ORD
+[14, 35, 65, 78, 87]
+GET from 10.42.0.2
+VACIO
+[14, 35, 65, 78, 87]
+POST 90 85 27 14 57  from 10.42.0.2
+VACIO
+[14, 35, 65, 78, 87]
+GET from 10.42.0.2
+DESORD
+[90, 85, 27, 14, 57]
+POST 42 50 40 36 52  from 10.42.0.2
+DESORD
+[90, 85, 27, 14, 57]
+POST 15 62 21 55 80  from 10.42.0.2
+DESORD
+[90, 85, 27, 14, 57]
+GET from 10.42.0.2
+DESORD
+[90, 85, 27, 14, 57]
+:-    Array Sorted
+POST 54 97 13 69 75  from 10.42.0.2
+ORD
+[14, 27, 57, 85, 90]
+GET from 10.42.0.2
+ORD
+[14, 27, 57, 85, 90]
+POST 52 14 51 78 34  from 10.42.0.2
+VACIO
+[14, 27, 57, 85, 90]
+POST 54 97 13 69 75  from 10.42.0.2
+DESORD
+[52, 14, 51, 78, 34]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[14, 34, 51, 52, 78]
+POST 42 50 40 36 52  from 10.42.0.2
+VACIO
+[14, 34, 51, 52, 78]
+GET from 10.42.0.2
+DESORD
+[42, 50, 40, 36, 52]
+POST 15 62 21 55 80  from 10.42.0.2
+DESORD
+[42, 50, 40, 36, 52]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[36, 40, 42, 50, 52]
+POST 15 62 21 55 80  from 10.42.0.2
+VACIO
+[36, 40, 42, 50, 52]
+GET from 10.42.0.2
+DESORD
+[15, 62, 21, 55, 80]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[15, 21, 55, 62, 80]
+POST 54 97 13 69 75  from 10.42.0.2
+VACIO
+[15, 21, 55, 62, 80]
+GET from 10.42.0.2
+DESORD
+[54, 97, 13, 69, 75]
+:-    Array Sorted
+POST 91 85 28 85 13  from 10.42.0.2
+ORD
+[13, 54, 69, 75, 97]
+POST 88 62 11 7 17  from 10.42.0.2
+ORD
+[13, 54, 69, 75, 97]
+POST 93 63 10 82 63  from 10.42.0.2
+ORD
+[13, 54, 69, 75, 97]
+POST 88 62 11 7 17  from 10.42.0.2
+ORD
+[13, 54, 69, 75, 97]
+GET from 10.42.0.2
+ORD
+[13, 54, 69, 75, 97]
+POST 91 85 28 85 13  from 10.42.0.2
+VACIO
+[13, 54, 69, 75, 97]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[13, 28, 85, 85, 91]
+POST 88 62 11 7 17  from 10.42.0.2
+VACIO
+[13, 28, 85, 85, 91]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[7, 11, 17, 62, 88]
+POST 6 23 35 86 51  from 10.42.0.2
+VACIO
+[7, 11, 17, 62, 88]
+:-    Array Sorted
+POST 93 63 10 82 63  from 10.42.0.2
+ORD
+[6, 23, 35, 51, 86]
+GET from 10.42.0.2
+ORD
+[6, 23, 35, 51, 86]
+POST 54 42 81 4 58  from 10.42.0.2
+VACIO
+[6, 23, 35, 51, 86]
+:-    Array Sorted
+POST 43 79 25 35 31  from 10.42.0.2
+ORD
+[4, 42, 54, 58, 81]
+GET from 10.42.0.2
+ORD
+[4, 42, 54, 58, 81]
+POST 32 15 72 66 1  from 10.42.0.2
+VACIO
+[4, 42, 54, 58, 81]
+GET from 10.42.0.2
+DESORD
+[32, 15, 72, 66, 1]
+POST 43 79 25 35 31  from 10.42.0.2
+DESORD
+[32, 15, 72, 66, 1]
+POST 93 63 10 82 63  from 10.42.0.2
+DESORD
+[32, 15, 72, 66, 1]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[1, 15, 32, 66, 72]
+POST 90 66 44 94 14  from 10.42.0.2
+VACIO
+[1, 15, 32, 66, 72]
+:-    Array Sorted
+POST 93 63 10 82 63  from 10.42.0.2
+ORD
+[14, 44, 66, 90, 94]
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[14, 44, 66, 90, 94]
+GET from 10.42.0.2
+ORD
+[14, 44, 66, 90, 94]
+GET from 10.42.0.2
+VACIO
+[14, 44, 66, 90, 94]
+POST 43 79 25 35 31  from 10.42.0.2
+VACIO
+[14, 44, 66, 90, 94]
+POST 21 17 97 19 52  from 10.42.0.2
+DESORD
+[43, 79, 25, 35, 31]
+:-    Array Sorted
+POST 90 97 56 35 71  from 10.42.0.2
+ORD
+[25, 31, 35, 43, 79]
+GET from 10.42.0.2
+ORD
+[25, 31, 35, 43, 79]
+POST 93 63 10 82 63  from 10.42.0.2
+VACIO
+[25, 31, 35, 43, 79]
+:-    Array Sorted
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[10, 63, 63, 82, 93]
+GET from 10.42.0.2
+ORD
+[10, 63, 63, 82, 93]
+POST 90 97 56 35 71  from 10.42.0.2
+VACIO
+[10, 63, 63, 82, 93]
+GET from 10.42.0.2
+DESORD
+[90, 97, 56, 35, 71]
+:-    Array Sorted
+POST 53 42 45 73 5  from 10.42.0.2
+ORD
+[35, 56, 71, 90, 97]
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[35, 56, 71, 90, 97]
+GET from 10.42.0.2
+ORD
+[35, 56, 71, 90, 97]
+POST 80 34 32 64 66  from 10.42.0.2
+VACIO
+[35, 56, 71, 90, 97]
+GET from 10.42.0.2
+DESORD
+[80, 34, 32, 64, 66]
+GET from 10.42.0.2
+DESORD
+[80, 34, 32, 64, 66]
+POST 21 17 97 19 52  from 10.42.0.2
+DESORD
+[80, 34, 32, 64, 66]
+:-    Array Sorted
+POST 53 42 45 73 5  from 10.42.0.2
+ORD
+[32, 34, 64, 66, 80]
+POST 81 48 76 80 75  from 10.42.0.2
+ORD
+[32, 34, 64, 66, 80]
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[32, 34, 64, 66, 80]
+GET from 10.42.0.2
+ORD
+[32, 34, 64, 66, 80]
+POST 53 42 45 73 5  from 10.42.0.2
+VACIO
+[32, 34, 64, 66, 80]
+POST 21 17 97 19 52  from 10.42.0.2
+DESORD
+[53, 42, 45, 73, 5]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[5, 42, 45, 53, 73]
+POST 93 37 12 86 29  from 10.42.0.2
+VACIO
+[5, 42, 45, 53, 73]
+POST 81 48 76 80 75  from 10.42.0.2
+DESORD
+[93, 37, 12, 86, 29]
+GET from 10.42.0.2
+DESORD
+[93, 37, 12, 86, 29]
+Conexion recibida de: 10.42.0.2
+GET from 10.42.0.2
+DESORD
+[93, 37, 12, 86, 29]
+:-    Array Sorted
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[12, 29, 37, 86, 93]
+POST 81 48 76 80 75  from 10.42.0.2
+ORD
+[12, 29, 37, 86, 93]
+GET from 10.42.0.2
+ORD
+[12, 29, 37, 86, 93]
+POST 10 64 58 100 1  from 10.42.0.2
+VACIO
+[12, 29, 37, 86, 93]
+POST 74 64 45 65 72  from 10.42.0.2
+DESORD
+[10, 64, 58, 100, 1]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[1, 10, 58, 64, 100]
+GET from 10.42.0.2
+VACIO
+[1, 10, 58, 64, 100]
+GET from 10.42.0.2
+VACIO
+[1, 10, 58, 64, 100]
+POST 81 48 76 80 75  from 10.42.0.2
+VACIO
+[1, 10, 58, 64, 100]
+:-    Array Sorted
+POST 74 64 45 65 72  from 10.42.0.2
+ORD
+[48, 75, 76, 80, 81]
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[48, 75, 76, 80, 81]
+GET from 10.42.0.2
+ORD
+[48, 75, 76, 80, 81]
+GET from 10.42.0.2
+VACIO
+[48, 75, 76, 80, 81]
+GET from 10.42.0.2
+VACIO
+[48, 75, 76, 80, 81]
+POST 57 86 76 56 76  from 10.42.0.2
+VACIO
+[48, 75, 76, 80, 81]
+POST 45 79 60 32 43  from 10.42.0.2
+DESORD
+[57, 86, 76, 56, 76]
+GET from 10.42.0.2
+DESORD
+[57, 86, 76, 56, 76]
+POST 74 64 45 65 72  from 10.42.0.2
+DESORD
+[57, 86, 76, 56, 76]
+:-    Array Sorted
+POST 21 17 97 19 52  from 10.42.0.2
+ORD
+[56, 57, 76, 76, 86]
+GET from 10.42.0.2
+ORD
+[56, 57, 76, 76, 86]
+GET from 10.42.0.2
+VACIO
+[56, 57, 76, 76, 86]
+GET from 10.42.0.2
+VACIO
+[56, 57, 76, 76, 86]
+GET from 10.42.0.2
+VACIO
+[56, 57, 76, 76, 86]
+POST 21 17 97 19 52  from 10.42.0.2
+VACIO
+[56, 57, 76, 76, 86]
+:-    Array Sorted
+POST 45 79 60 32 43  from 10.42.0.2
+ORD
+[17, 19, 21, 52, 97]
+POST 59 36 74 72 65  from 10.42.0.2
+ORD
+[17, 19, 21, 52, 97]
+POST 74 64 45 65 72  from 10.42.0.2
+ORD
+[17, 19, 21, 52, 97]
+GET from 10.42.0.2
+ORD
+[17, 19, 21, 52, 97]
+GET from 10.42.0.2
+VACIO
+[17, 19, 21, 52, 97]
+GET from 10.42.0.2
+VACIO
+[17, 19, 21, 52, 97]
+GET from 10.42.0.2
+VACIO
+[17, 19, 21, 52, 97]
+POST 45 79 60 32 43  from 10.42.0.2
+VACIO
+[17, 19, 21, 52, 97]
+GET from 10.42.0.2
+DESORD
+[45, 79, 60, 32, 43]
+POST 59 36 74 72 65  from 10.42.0.2
+DESORD
+[45, 79, 60, 32, 43]
+POST 74 64 45 65 72  from 10.42.0.2
+DESORD
+[45, 79, 60, 32, 43]
+GET from 10.42.0.2
+DESORD
+[45, 79, 60, 32, 43]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[32, 43, 45, 60, 79]
+POST 54 27 94 55 87  from 10.42.0.2
+VACIO
+[32, 43, 45, 60, 79]
+GET from 10.42.0.2
+DESORD
+[54, 27, 94, 55, 87]
+:-    Array Sorted
+POST 74 64 45 65 72  from 10.42.0.2
+ORD
+[27, 54, 55, 87, 94]
+POST 69 39 50 22 83  from 10.42.0.2
+ORD
+[27, 54, 55, 87, 94]
+GET from 10.42.0.2
+ORD
+[27, 54, 55, 87, 94]
+GET from 10.42.0.2
+VACIO
+[27, 54, 55, 87, 94]
+GET from 10.42.0.2
+VACIO
+[27, 54, 55, 87, 94]
+POST 59 36 74 72 65  from 10.42.0.2
+VACIO
+[27, 54, 55, 87, 94]
+:-    Array Sorted
+POST 69 39 50 22 83  from 10.42.0.2
+ORD
+[36, 59, 65, 72, 74]
+GET from 10.42.0.2
+ORD
+[36, 59, 65, 72, 74]
+POST 74 64 45 65 72  from 10.42.0.2
+VACIO
+[36, 59, 65, 72, 74]
+POST 39 29 24 16 4  from 10.42.0.2
+DESORD
+[74, 64, 45, 65, 72]
+GET from 10.42.0.2
+DESORD
+[74, 64, 45, 65, 72]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[45, 64, 65, 72, 74]
+GET from 10.42.0.2
+VACIO
+[45, 64, 65, 72, 74]
+POST 63 51 37 13 50  from 10.42.0.2
+VACIO
+[45, 64, 65, 72, 74]
+GET from 10.42.0.2
+DESORD
+[63, 51, 37, 13, 50]
+POST 39 29 24 16 4  from 10.42.0.2
+DESORD
+[63, 51, 37, 13, 50]
+POST 69 39 50 22 83  from 10.42.0.2
+DESORD
+[63, 51, 37, 13, 50]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[13, 37, 50, 51, 63]
+GET from 10.42.0.2
+VACIO
+[13, 37, 50, 51, 63]
+POST 79 63 98 12 63  from 10.42.0.2
+VACIO
+[13, 37, 50, 51, 63]
+GET from 10.42.0.2
+DESORD
+[79, 63, 98, 12, 63]
+POST 69 39 50 22 83  from 10.42.0.2
+DESORD
+[79, 63, 98, 12, 63]
+:-    Array Sorted
+POST 39 29 24 16 4  from 10.42.0.2
+ORD
+[12, 63, 63, 79, 98]
+GET from 10.42.0.2
+ORD
+[12, 63, 63, 79, 98]
+POST 82 72 55 69 74  from 10.42.0.2
+VACIO
+[12, 63, 63, 79, 98]
+GET from 10.42.0.2
+DESORD
+[82, 72, 55, 69, 74]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[55, 69, 72, 74, 82]
+GET from 10.42.0.2
+VACIO
+[55, 69, 72, 74, 82]
+POST 39 29 24 16 4  from 10.42.0.2
+VACIO
+[55, 69, 72, 74, 82]
+POST 69 39 50 22 83  from 10.42.0.2
+DESORD
+[39, 29, 24, 16, 4]
+POST 87 45 83 67 60  from 10.42.0.2
+DESORD
+[39, 29, 24, 16, 4]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[4, 16, 24, 29, 39]
+POST 69 39 50 22 83  from 10.42.0.2
+VACIO
+[4, 16, 24, 29, 39]
+POST 44 60 84 71 95  from 10.42.0.2
+DESORD
+[69, 39, 50, 22, 83]
+:-    Array Sorted
+POST 87 45 83 67 60  from 10.42.0.2
+ORD
+[22, 39, 50, 69, 83]
+GET from 10.42.0.2
+ORD
+[22, 39, 50, 69, 83]
+GET from 10.42.0.2
+VACIO
+[22, 39, 50, 69, 83]
+POST 88 51 51 45 57  from 10.42.0.2
+VACIO
+[22, 39, 50, 69, 83]
+:-    Array Sorted
+POST 44 60 84 71 95  from 10.42.0.2
+ORD
+[45, 51, 51, 57, 88]
+GET from 10.42.0.2
+ORD
+[45, 51, 51, 57, 88]
+GET from 10.42.0.2
+VACIO
+[45, 51, 51, 57, 88]
+GET from 10.42.0.2
+VACIO
+[45, 51, 51, 57, 88]
+POST 87 45 83 67 60  from 10.42.0.2
+VACIO
+[45, 51, 51, 57, 88]
+POST 44 60 84 71 95  from 10.42.0.2
+DESORD
+[87, 45, 83, 67, 60]
+POST 38 70 30 7 17  from 10.42.0.2
+DESORD
+[87, 45, 83, 67, 60]
+:-    Array Sorted
+POST 99 40 50 89 83  from 10.42.0.2
+ORD
+[45, 60, 67, 83, 87]
+GET from 10.42.0.2
+ORD
+[45, 60, 67, 83, 87]
+GET from 10.42.0.2
+VACIO
+[45, 60, 67, 83, 87]
+POST 13 99 96 39 94  from 10.42.0.2
+VACIO
+[45, 60, 67, 83, 87]
+POST 44 60 84 71 95  from 10.42.0.2
+DESORD
+[13, 99, 96, 39, 94]
+:-    Array Sorted
+POST 38 70 30 7 17  from 10.42.0.2
+ORD
+[13, 39, 94, 96, 99]
+GET from 10.42.0.2
+ORD
+[13, 39, 94, 96, 99]
+GET from 10.42.0.2
+VACIO
+[13, 39, 94, 96, 99]
+POST 44 60 84 71 95  from 10.42.0.2
+VACIO
+[13, 39, 94, 96, 99]
+POST 99 40 50 89 83  from 10.42.0.2
+DESORD
+[44, 60, 84, 71, 95]
+GET from 10.42.0.2
+DESORD
+[44, 60, 84, 71, 95]
+POST 38 70 30 7 17  from 10.42.0.2
+DESORD
+[44, 60, 84, 71, 95]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[44, 60, 71, 84, 95]
+GET from 10.42.0.2
+VACIO
+[44, 60, 71, 84, 95]
+POST 72 93 35 2 3  from 10.42.0.2
+VACIO
+[44, 60, 71, 84, 95]
+GET from 10.42.0.2
+DESORD
+[72, 93, 35, 2, 3]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[2, 3, 35, 72, 93]
+POST 38 70 30 7 17  from 10.42.0.2
+VACIO
+[2, 3, 35, 72, 93]
+POST 99 40 50 89 83  from 10.42.0.2
+DESORD
+[38, 70, 30, 7, 17]
+POST 54 93 30 35 59  from 10.42.0.2
+DESORD
+[38, 70, 30, 7, 17]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[7, 17, 30, 38, 70]
+POST 28 75 57 15 6  from 10.42.0.2
+VACIO
+[7, 17, 30, 38, 70]
+GET from 10.42.0.2
+DESORD
+[28, 75, 57, 15, 6]
+GET from 10.42.0.2
+DESORD
+[28, 75, 57, 15, 6]
+:-    Array Sorted
+POST 99 40 50 89 83  from 10.42.0.2
+ORD
+[6, 15, 28, 57, 75]
+GET from 10.42.0.2
+ORD
+[6, 15, 28, 57, 75]
+GET from 10.42.0.2
+VACIO
+[6, 15, 28, 57, 75]
+GET from 10.42.0.2
+VACIO
+[6, 15, 28, 57, 75]
+POST 54 93 30 35 59  from 10.42.0.2
+VACIO
+[6, 15, 28, 57, 75]
+GET from 10.42.0.2
+DESORD
+[54, 93, 30, 35, 59]
+:-    Array Sorted
+POST 37 15 25 3 46  from 10.42.0.2
+ORD
+[30, 35, 54, 59, 93]
+POST 20 40 53 31 66  from 10.42.0.2
+ORD
+[30, 35, 54, 59, 93]
+POST 99 40 50 89 83  from 10.42.0.2
+ORD
+[30, 35, 54, 59, 93]
+POST 37 15 25 3 46  from 10.42.0.2
+ORD
+[30, 35, 54, 59, 93]
+GET from 10.42.0.2
+ORD
+[30, 35, 54, 59, 93]
+GET from 10.42.0.2
+VACIO
+[30, 35, 54, 59, 93]
+GET from 10.42.0.2
+VACIO
+[30, 35, 54, 59, 93]
+GET from 10.42.0.2
+VACIO
+[30, 35, 54, 59, 93]
+POST 99 40 50 89 83  from 10.42.0.2
+VACIO
+[30, 35, 54, 59, 93]
+POST 20 40 53 31 66  from 10.42.0.2
+DESORD
+[99, 40, 50, 89, 83]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[40, 50, 83, 89, 99]
+POST 84 88 63 35 92  from 10.42.0.2
+VACIO
+[40, 50, 83, 89, 99]
+POST 37 15 25 3 46  from 10.42.0.2
+DESORD
+[84, 88, 63, 35, 92]
+GET from 10.42.0.2
+DESORD
+[84, 88, 63, 35, 92]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[35, 63, 84, 88, 92]
+GET from 10.42.0.2
+VACIO
+[35, 63, 84, 88, 92]
+POST 37 15 25 3 46  from 10.42.0.2
+VACIO
+[35, 63, 84, 88, 92]
+POST 90 7 46 54 85  from 10.42.0.2
+DESORD
+[37, 15, 25, 3, 46]
+POST 20 40 53 31 66  from 10.42.0.2
+DESORD
+[37, 15, 25, 3, 46]
+GET from 10.42.0.2
+DESORD
+[37, 15, 25, 3, 46]
+POST 100 82 78 13 13  from 10.42.0.2
+DESORD
+[37, 15, 25, 3, 46]
+:-    Array Sorted
+POST 90 7 46 54 85  from 10.42.0.2
+ORD
+[3, 15, 25, 37, 46]
+GET from 10.42.0.2
+ORD
+[3, 15, 25, 37, 46]
+GET from 10.42.0.2
+VACIO
+[3, 15, 25, 37, 46]
+POST 20 40 53 31 66  from 10.42.0.2
+VACIO
+[3, 15, 25, 37, 46]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[20, 31, 40, 53, 66]
+POST 100 82 78 13 13  from 10.42.0.2
+VACIO
+[20, 31, 40, 53, 66]
+GET from 10.42.0.2
+DESORD
+[100, 82, 78, 13, 13]
+:-    Array Sorted
+POST 90 7 46 54 85  from 10.42.0.2
+ORD
+[13, 13, 78, 82, 100]
+GET from 10.42.0.2
+ORD
+[13, 13, 78, 82, 100]
+POST 53 66 19 53 69  from 10.42.0.2
+VACIO
+[13, 13, 78, 82, 100]
+GET from 10.42.0.2
+DESORD
+[53, 66, 19, 53, 69]
+GET from 10.42.0.2
+DESORD
+[53, 66, 19, 53, 69]
+:-    Array Sorted
+POST 83 36 90 37 47  from 10.42.0.2
+ORD
+[19, 53, 53, 66, 69]
+POST 90 7 46 54 85  from 10.42.0.2
+ORD
+[19, 53, 53, 66, 69]
+GET from 10.42.0.2
+ORD
+[19, 53, 53, 66, 69]
+GET from 10.42.0.2
+VACIO
+[19, 53, 53, 66, 69]
+POST 59 30 11 22 43  from 10.42.0.2
+VACIO
+[19, 53, 53, 66, 69]
+POST 83 36 90 37 47  from 10.42.0.2
+DESORD
+[59, 30, 11, 22, 43]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[11, 22, 30, 43, 59]
+GET from 10.42.0.2
+VACIO
+[11, 22, 30, 43, 59]
+GET from 10.42.0.2
+VACIO
+[11, 22, 30, 43, 59]
+POST 90 7 46 54 85  from 10.42.0.2
+VACIO
+[11, 22, 30, 43, 59]
+POST 50 3 51 70 33  from 10.42.0.2
+DESORD
+[90, 7, 46, 54, 85]
+GET from 10.42.0.2
+DESORD
+[90, 7, 46, 54, 85]
+:-    Array Sorted
+POST 50 3 51 70 33  from 10.42.0.2
+ORD
+[7, 46, 54, 85, 90]
+POST 83 36 90 37 47  from 10.42.0.2
+ORD
+[7, 46, 54, 85, 90]
+GET from 10.42.0.2
+ORD
+[7, 46, 54, 85, 90]
+GET from 10.42.0.2
+VACIO
+[7, 46, 54, 85, 90]
+POST 18 93 71 66 62  from 10.42.0.2
+VACIO
+[7, 46, 54, 85, 90]
+GET from 10.42.0.2
+DESORD
+[18, 93, 71, 66, 62]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[18, 62, 66, 71, 93]
+POST 50 3 51 70 33  from 10.42.0.2
+VACIO
+[18, 62, 66, 71, 93]
+POST 83 36 90 37 47  from 10.42.0.2
+DESORD
+[50, 3, 51, 70, 33]
+POST 61 6 61 65 88  from 10.42.0.2
+DESORD
+[50, 3, 51, 70, 33]
+GET from 10.42.0.2
+DESORD
+[50, 3, 51, 70, 33]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[3, 33, 50, 51, 70]
+POST 83 36 90 37 47  from 10.42.0.2
+VACIO
+[3, 33, 50, 51, 70]
+GET from 10.42.0.2
+DESORD
+[83, 36, 90, 37, 47]
+POST 61 6 61 65 88  from 10.42.0.2
+DESORD
+[83, 36, 90, 37, 47]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[36, 37, 47, 83, 90]
+GET from 10.42.0.2
+VACIO
+[36, 37, 47, 83, 90]
+POST 24 85 32 39 76  from 10.42.0.2
+VACIO
+[36, 37, 47, 83, 90]
+POST 29 49 19 62 13  from 10.42.0.2
+DESORD
+[24, 85, 32, 39, 76]
+POST 61 6 61 65 88  from 10.42.0.2
+DESORD
+[24, 85, 32, 39, 76]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[24, 32, 39, 76, 85]
+GET from 10.42.0.2
+VACIO
+[24, 32, 39, 76, 85]
+GET from 10.42.0.2
+VACIO
+[24, 32, 39, 76, 85]
+POST 29 49 19 62 13  from 10.42.0.2
+VACIO
+[24, 32, 39, 76, 85]
+GET from 10.42.0.2
+DESORD
+[29, 49, 19, 62, 13]
+POST 84 80 54 59 9  from 10.42.0.2
+DESORD
+[29, 49, 19, 62, 13]
+:-    Array Sorted
+POST 83 12 10 88 54  from 10.42.0.2
+ORD
+[13, 19, 29, 49, 62]
+POST 61 6 61 65 88  from 10.42.0.2
+ORD
+[13, 19, 29, 49, 62]
+GET from 10.42.0.2
+ORD
+[13, 19, 29, 49, 62]
+GET from 10.42.0.2
+VACIO
+[13, 19, 29, 49, 62]
+GET from 10.42.0.2
+VACIO
+[13, 19, 29, 49, 62]
+POST 61 6 61 65 88  from 10.42.0.2
+VACIO
+[13, 19, 29, 49, 62]
+GET from 10.42.0.2
+DESORD
+[61, 6, 61, 65, 88]
+:-    Array Sorted
+POST 10 21 31 26 49  from 10.42.0.2
+ORD
+[6, 61, 61, 65, 88]
+POST 83 12 10 88 54  from 10.42.0.2
+ORD
+[6, 61, 61, 65, 88]
+POST 84 80 54 59 9  from 10.42.0.2
+ORD
+[6, 61, 61, 65, 88]
+GET from 10.42.0.2
+ORD
+[6, 61, 61, 65, 88]
+GET from 10.42.0.2
+VACIO
+[6, 61, 61, 65, 88]
+GET from 10.42.0.2
+VACIO
+[6, 61, 61, 65, 88]
+POST 10 21 31 26 49  from 10.42.0.2
+VACIO
+[6, 61, 61, 65, 88]
+:-    Array Sorted
+POST 83 12 10 88 54  from 10.42.0.2
+ORD
+POST 84 80 54 59 9  from 10.42.0.2
+[10, 21, 26, 31, 49]
+ORD
+[10, 21, 26, 31, 49]
+GET from 10.42.0.2
+ORD
+[10, 21, 26, 31, 49]
+GET from 10.42.0.2
+VACIO
+[10, 21, 26, 31, 49]
+POST 84 27 76 38 58  from 10.42.0.2
+VACIO
+[10, 21, 26, 31, 49]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[27, 38, 58, 76, 84]
+POST 84 80 54 59 9  from 10.42.0.2
+VACIO
+[27, 38, 58, 76, 84]
+POST 79 46 65 94 80  from 10.42.0.2
+DESORD
+[84, 80, 54, 59, 9]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[9, 54, 59, 80, 84]
+GET from 10.42.0.2
+VACIO
+[9, 54, 59, 80, 84]
+POST 83 12 10 88 54  from 10.42.0.2
+VACIO
+[9, 54, 59, 80, 84]
+:-    Array Sorted
+POST 21 12 49 78 28  from 10.42.0.2
+ORD
+[10, 12, 54, 83, 88]
+POST 79 46 65 94 80  from 10.42.0.2
+ORD
+[10, 12, 54, 83, 88]
+GET from 10.42.0.2
+ORD
+[10, 12, 54, 83, 88]
+GET from 10.42.0.2
+VACIO
+[10, 12, 54, 83, 88]
+POST 34 64 62 31 97  from 10.42.0.2
+VACIO
+[10, 12, 54, 83, 88]
+POST 51 39 50 87 59  from 10.42.0.2
+DESORD
+[34, 64, 62, 31, 97]
+GET from 10.42.0.2
+DESORD
+[34, 64, 62, 31, 97]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[31, 34, 62, 64, 97]
+POST 21 12 49 78 28  from 10.42.0.2
+VACIO
+[31, 34, 62, 64, 97]
+:-    Array Sorted
+POST 79 46 65 94 80  from 10.42.0.2
+ORD
+[12, 21, 28, 49, 78]
+GET from 10.42.0.2
+ORD
+[12, 21, 28, 49, 78]
+GET from 10.42.0.2
+VACIO
+[12, 21, 28, 49, 78]
+GET from 10.42.0.2
+VACIO
+[12, 21, 28, 49, 78]
+POST 51 39 50 87 59  from 10.42.0.2
+VACIO
+[12, 21, 28, 49, 78]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[39, 50, 51, 59, 87]
+POST 17 96 100 74 16  from 10.42.0.2
+VACIO
+[39, 50, 51, 59, 87]
+GET from 10.42.0.2
+DESORD
+[17, 96, 100, 74, 16]
+POST 79 46 65 94 80  from 10.42.0.2
+DESORD
+[17, 96, 100, 74, 16]
+:-    Array Sorted
+POST 76 5 58 68 72  from 10.42.0.2
+ORD
+[16, 17, 74, 96, 100]
+GET from 10.42.0.2
+ORD
+[16, 17, 74, 96, 100]
+POST 66 33 90 82 5  from 10.42.0.2
+VACIO
+[16, 17, 74, 96, 100]
+GET from 10.42.0.2
+DESORD
+[66, 33, 90, 82, 5]
+GET from 10.42.0.2
+DESORD
+[66, 33, 90, 82, 5]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[5, 33, 66, 82, 90]
+POST 79 46 65 94 80  from 10.42.0.2
+VACIO
+[5, 33, 66, 82, 90]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[46, 65, 79, 80, 94]
+POST 85 75 65 87 92  from 10.42.0.2
+VACIO
+[46, 65, 79, 80, 94]
+:-    Array Sorted
+POST 76 5 58 68 72  from 10.42.0.2
+ORD
+[65, 75, 85, 87, 92]
+POST 26 62 31 29 91  from 10.42.0.2
+ORD
+[65, 75, 85, 87, 92]
+GET from 10.42.0.2
+ORD
+[65, 75, 85, 87, 92]
+GET from 10.42.0.2
+VACIO
+[65, 75, 85, 87, 92]
+GET from 10.42.0.2
+VACIO
+[65, 75, 85, 87, 92]
+GET from 10.42.0.2
+VACIO
+[65, 75, 85, 87, 92]
+POST 90 1 46 67 6  from 10.42.0.2
+VACIO
+[65, 75, 85, 87, 92]
+POST 76 5 58 68 72  from 10.42.0.2
+DESORD
+[90, 1, 46, 67, 6]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[1, 6, 46, 67, 90]
+POST 26 62 31 29 91  from 10.42.0.2
+VACIO
+[1, 6, 46, 67, 90]
+POST 74 3 80 14 70  from 10.42.0.2
+DESORD
+[26, 62, 31, 29, 91]
+GET from 10.42.0.2
+DESORD
+[26, 62, 31, 29, 91]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[26, 29, 31, 62, 91]
+GET from 10.42.0.2
+VACIO
+[26, 29, 31, 62, 91]
+POST 74 3 80 14 70  from 10.42.0.2
+VACIO
+[26, 29, 31, 62, 91]
+POST 76 5 58 68 72  from 10.42.0.2
+DESORD
+[74, 3, 80, 14, 70]
+GET from 10.42.0.2
+DESORD
+[74, 3, 80, 14, 70]
+Conexion cerrada para: 10.42.0.2
+:-    Array Sorted
+POST 16 75 77 74 58  from 10.42.0.2
+ORD
+[3, 14, 70, 74, 80]
+GET from 10.42.0.2
+ORD
+[3, 14, 70, 74, 80]
+POST 29 23 44 61 80  from 10.42.0.2
+VACIO
+[3, 14, 70, 74, 80]
+POST 76 5 58 68 72  from 10.42.0.2
+DESORD
+[29, 23, 44, 61, 80]
+GET from 10.42.0.2
+DESORD
+[29, 23, 44, 61, 80]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[23, 29, 44, 61, 80]
+POST 38 30 18 88 48  from 10.42.0.2
+VACIO
+[23, 29, 44, 61, 80]
+:-    Array Sorted
+POST 16 75 77 74 58  from 10.42.0.2
+ORD
+[18, 30, 38, 48, 88]
+Conexion cerrada para: 10.42.0.2
+GET from 10.42.0.2
+ORD
+[18, 30, 38, 48, 88]
+GET from 10.42.0.2
+VACIO
+[18, 30, 38, 48, 88]
+GET from 10.42.0.2
+VACIO
+[18, 30, 38, 48, 88]
+POST 16 75 77 74 58  from 10.42.0.2
+VACIO
+[18, 30, 38, 48, 88]
+POST 63 84 75 42 33  from 10.42.0.2
+DESORD
+[16, 75, 77, 74, 58]
+:-    Array Sorted
+POST 59 75 29 90 9  from 10.42.0.2
+ORD
+[16, 58, 74, 75, 77]
+GET from 10.42.0.2
+ORD
+[16, 58, 74, 75, 77]
+GET from 10.42.0.2
+VACIO
+[16, 58, 74, 75, 77]
+GET from 10.42.0.2
+VACIO
+[16, 58, 74, 75, 77]
+POST 56 6 84 51 95  from 10.42.0.2
+VACIO
+[16, 58, 74, 75, 77]
+POST 59 75 29 90 9  from 10.42.0.2
+DESORD
+[56, 6, 84, 51, 95]
+POST 63 84 75 42 33  from 10.42.0.2
+DESORD
+[56, 6, 84, 51, 95]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[6, 51, 56, 84, 95]
+POST 63 84 75 42 33  from 10.42.0.2
+VACIO
+[6, 51, 56, 84, 95]
+GET from 10.42.0.2
+DESORD
+[63, 84, 75, 42, 33]
+POST 59 75 29 90 9  from 10.42.0.2
+DESORD
+[63, 84, 75, 42, 33]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[33, 42, 63, 75, 84]
+POST 64 81 68 1 74  from 10.42.0.2
+VACIO
+[33, 42, 63, 75, 84]
+GET from 10.42.0.2
+DESORD
+[64, 81, 68, 1, 74]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[1, 64, 68, 74, 81]
+GET from 10.42.0.2
+VACIO
+[1, 64, 68, 74, 81]
+POST 59 75 29 90 9  from 10.42.0.2
+VACIO
+[1, 64, 68, 74, 81]
+Conexion cerrada para: 10.42.0.2
+POST 56 66 77 44 88  from 10.42.0.2
+DESORD
+[59, 75, 29, 90, 9]
+GET from 10.42.0.2
+DESORD
+[59, 75, 29, 90, 9]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[9, 29, 59, 75, 90]
+GET from 10.42.0.2
+VACIO
+[9, 29, 59, 75, 90]
+POST 56 66 77 44 88  from 10.42.0.2
+VACIO
+[9, 29, 59, 75, 90]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[44, 56, 66, 77, 88]
+POST 86 23 54 75 66  from 10.42.0.2
+VACIO
+[44, 56, 66, 77, 88]
+GET from 10.42.0.2
+DESORD
+[86, 23, 54, 75, 66]
+:-    Array Sorted
+Conexion cerrada para: 10.42.0.2
+POST 4 71 27 31 82  from 10.42.0.2
+ORD
+[23, 54, 66, 75, 86]
+GET from 10.42.0.2
+ORD
+[23, 54, 66, 75, 86]
+GET from 10.42.0.2
+VACIO
+[23, 54, 66, 75, 86]
+POST 46 8 20 15 71  from 10.42.0.2
+VACIO
+[23, 54, 66, 75, 86]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[8, 15, 20, 46, 71]
+POST 4 71 27 31 82  from 10.42.0.2
+VACIO
+[8, 15, 20, 46, 71]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[4, 27, 31, 71, 82]
+POST 22 11 39 3 34  from 10.42.0.2
+VACIO
+[4, 27, 31, 71, 82]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[3, 11, 22, 34, 39]
+GET from 10.42.0.2
+VACIO
+[3, 11, 22, 34, 39]
+POST 20 81 55 20 49  from 10.42.0.2
+VACIO
+[3, 11, 22, 34, 39]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[20, 20, 49, 55, 81]
+POST 36 73 51 20 50  from 10.42.0.2
+VACIO
+[20, 20, 49, 55, 81]
+GET from 10.42.0.2
+DESORD
+[36, 73, 51, 20, 50]
+:-    Array Sorted
+POST 66 21 13 25 84  from 10.42.0.2
+ORD
+[20, 36, 50, 51, 73]
+GET from 10.42.0.2
+ORD
+[20, 36, 50, 51, 73]
+GET from 10.42.0.2
+VACIO
+[20, 36, 50, 51, 73]
+POST 68 67 36 23 46  from 10.42.0.2
+VACIO
+[20, 36, 50, 51, 73]
+:-    Array Sorted
+POST 66 21 13 25 84  from 10.42.0.2
+ORD
+[23, 36, 46, 67, 68]
+Conexion cerrada para: 10.42.0.2
+GET from 10.42.0.2
+ORD
+[23, 36, 46, 67, 68]
+GET from 10.42.0.2
+VACIO
+[23, 36, 46, 67, 68]
+POST 66 21 13 25 84  from 10.42.0.2
+VACIO
+[23, 36, 46, 67, 68]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[13, 21, 25, 66, 84]
+POST 63 68 49 41 100  from 10.42.0.2
+VACIO
+[13, 21, 25, 66, 84]
+:-    Array Sorted
+GET from 10.42.0.2
+ORD
+[41, 49, 63, 68, 100]
+Conexion cerrada para: 10.42.0.2
+POST 25 38 50 92 84  from 10.42.0.2
+VACIO
+[41, 49, 63, 68, 100]
+GET from 10.42.0.2
+DESORD
+[25, 38, 50, 92, 84]
+:-    Array Sorted
+POST 53 44 2 100 14  from 10.42.0.2
+ORD
+[25, 38, 50, 84, 92]
+GET from 10.42.0.2
+ORD
+[25, 38, 50, 84, 92]
+POST 53 44 2 100 14  from 10.42.0.2
+VACIO
+[25, 38, 50, 84, 92]
+:-    Array Sorted
+Conexion cerrada para: 10.42.0.2
+POST 97 79 47 48 80  from 10.42.0.2
+ORD
+[2, 14, 44, 53, 100]
+POST 97 79 47 48 80  from 10.42.0.2
+ORD
+[2, 14, 44, 53, 100]
+POST 97 79 47 48 80  from 10.42.0.2
+ORD
+[2, 14, 44, 53, 100]
+POST 97 79 47 48 80  from 10.42.0.2
+ORD
+[2, 14, 44, 53, 100]
+POST 97 79 47 48 80  from 10.42.0.2
+ORD
+[2, 14, 44, 53, 100]
+POST 97 79 47 48 80  from 10.42.0.2
+ORD
+[2, 14, 44, 53, 100]
+Conexion cerrada para: 10.42.0.2
