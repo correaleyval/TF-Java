@@ -1,21 +1,61 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package clienttester;
 
-/**
- *
- * @author ragnar
- */
-public class ClientTester {
+import java.net.*; 
+import java.io.*; 
+import static java.lang.Thread.sleep;
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+import java.util.Scanner;
+  
+public class ClientTester 
+{ 
+    private Socket socket            = null; 
+    private DataInputStream  input   = null; 
+    private DataOutputStream out     = null; 
+    
+    private Scanner keyboard = null;
+    
+    private String msg;
+  
+    public ClientTester(String address, int port) throws ClassNotFoundException, IOException, InterruptedException 
+    { 
+        
+        keyboard = new Scanner(System.in);
+
+        try
+        { 
+            socket = new Socket(address, port); 
+            System.out.println("Connected: " + socket.getInetAddress().getHostAddress()); 
+  
+            input  = new DataInputStream(socket.getInputStream()); 
+  
+            
+        } 
+        catch(UnknownHostException u) 
+        { 
+            System.out.println(u); 
+        } 
+        catch(IOException i) 
+        { 
+            System.out.println(i); 
+        } 
+  
+  
+        while(true) {
+            System.out.print("Message: ");
+            msg = keyboard.nextLine();
+            out    = new DataOutputStream(socket.getOutputStream()); 
+            out.writeUTF(msg);
+            out.flush();
+            out.flush();
+            
+            System.out.println("Sended Message");
+            
+            //System.out.println(input.readUTF());
+        }
     }
     
+    public static void main(String args[]) throws ClassNotFoundException, IOException, InterruptedException {
+        ClientTester c= new ClientTester("127.0.0.1", 7777);
+    }
 }

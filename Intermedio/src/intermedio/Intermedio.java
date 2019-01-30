@@ -14,7 +14,7 @@ import intermedio.net.ConnectionHandler;
 
 public class Intermedio {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
         Intermedio p = new Intermedio();
         
         p.listen(7777);
@@ -27,7 +27,7 @@ public class Intermedio {
         this.b = new BufferIntermedio();
     }
         
-    public void listen(int port) throws IOException {
+    public void listen(int port) throws IOException, ClassNotFoundException {
         ServerSocket serverConnect = new ServerSocket(port);
         System.out.println("Proceso intermedio escuchando en el puerto: 7777");
         

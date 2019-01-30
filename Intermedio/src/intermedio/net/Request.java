@@ -1,11 +1,10 @@
 
 package intermedio.net;
 
-import java.io.BufferedReader;
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.Socket;
-import java.util.StringTokenizer;
 
 /**
  *
@@ -14,34 +13,16 @@ import java.util.StringTokenizer;
  * 
  */
 public class Request {
-    private final BufferedReader in;
-    
-    public String method;
-    public String url;
+    private final DataInputStream in;
+
     public String input;
     
-    Request(Socket s) throws IOException {
-
-        in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            
-        input = in.readLine();
-        
-        try {
-            StringTokenizer parse = new StringTokenizer(input);
-            
-            method = parse.nextToken().toUpperCase();
-           
-            url = parse.nextToken().toLowerCase();
-        }
-        catch(Exception e) {
-            input = "GET / HTTP/1.1";
-            
-            StringTokenizer parse = new StringTokenizer(input);
-            
-            method = parse.nextToken().toUpperCase();
-           
-            url = parse.nextToken().toLowerCase();
-        }
+    Request(Socket s) throws IOException, ClassNotFoundException {
+        in = new DataInputStream(new BufferedInputStream ( s.getInputStream() ) );
+    }
+    
+    public String getMsg() throws IOException {
+        return in.readUTF();
     }
     
     public void close() throws IOException {
