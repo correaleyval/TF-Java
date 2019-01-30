@@ -9,39 +9,40 @@ import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
 import java.net.Socket;
 import java.util.Random;
-import javax.swing.SwingUtilities;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.SwingUtilities;
+
 /**
  *
  * @author ragnar
  */
-public class MainWindow extends javax.swing.JFrame {
+public class MainWindow extends javax.swing.JFrame implements Runnable {
 
     /**
      * Creates new form MainWindow
      */
     public MainWindow() {
         initComponents();
-        
+
         arrayLabel.setText("");
         stateLabel.setText("");
-        
+
         r = new Random();
     }
-    
+
     private String serverip;
     private Socket cliente;
-    private DataInputStream  input; 
+    private DataInputStream input;
     private DataOutputStream output;
     private Random r;
     private String query;
     private String response;
-    
-    private void setState(String m) throws InterruptedException, InvocationTargetException {
+    private Thread t;
+
+    private void setState(String m) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -49,8 +50,8 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
     }
-    
-    private void setArray(String m) throws InterruptedException, InvocationTargetException {
+
+    private void setArray(String m) {
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
@@ -58,81 +59,53 @@ public class MainWindow extends javax.swing.JFrame {
             }
         });
     }
-    
-    private void startProduction() throws InterruptedException, InvocationTargetException {
-        setState("Comenzando produccion");
-        
-        SwingUtilities.invokeLater(
-            new Runnable()
-            {
-                @Override
-                public void run() 
-                {
-                  while(true) {
-                  
-                    query = "POST ";
-                    String strarr = "";
-                    
-                    for(int i = 0; i < 5; i++) {
-                        int a = 1 + r.nextInt(100);
-                        strarr +=  a + " ";
-                    }
-                    
-                    query += strarr;
-                    
-                      try {
-                          setArray(strarr);
-                      } catch (InterruptedException ex) {
-                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-                      } catch (InvocationTargetException ex) {
-                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-                      }
-                    
-                    try {
-                        do {
-                            output.writeUTF(query);
-                            output.flush();
-                            
-                            response = input.readUTF();
-                            
-                            setState(response);
-                            
-                            Thread.sleep(1000 + r.nextInt(3500));
-                        } while(response.equals("Esperando"));
-                        
-                    } catch (IOException ex) {
-                        try {
-                            setState("Error de conexion");
-                        } catch (InterruptedException ex1) {
-                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
-                        } catch (InvocationTargetException ex1) {
-                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
-                        }
-                    } catch (InterruptedException ex) {
-                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-                      } catch (InvocationTargetException ex) {
-                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-                      }
-                    
-                     try {
-                          Thread.sleep(1500);
-                      } catch (InterruptedException ex) {
-                        try {
-                            setState("Error de interrupcion del proceso");
-                        } catch (InterruptedException ex1) {
-                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
-                        } catch (InvocationTargetException ex1) {
-                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
-                        }
-                      }
-                  } 
-                } 
 
+    @Override
+    public void run() {
+        while (true) {
+            query = "POST ";
+            String strarr = "";
+
+            for (int i = 0; i < 5; i++) {
+                int a = 1 + r.nextInt(100);
+                strarr += a + " ";
+            }
+
+            query += strarr;
+
+            setArray(strarr);
             
-            } 
-        ); 
+            try {
+                
+                do {
+
+                    output.writeUTF(query);
+
+                    output.flush();
+
+                    response = input.readUTF();
+
+                    setState(response);
+
+                    Thread.sleep(500 + r.nextInt(1000));
+                } while (response.equals("Esperando"));
+                
+            } catch (IOException ex) {
+                setState("Error de conexion");
+                t.stop();
+                
+            } catch (InterruptedException ex) {
+                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -214,26 +187,23 @@ public class MainWindow extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // obtener ip
         serverip = iptext.getText();
-        
+
         try {
             // conectar al servidor
-            cliente = new Socket(serverip , 7777);
-            stateLabel.setText("Conexion establecida con exito");
-            
+            cliente = new Socket(serverip, 7777);
+            setState("Conexion establecida con exito");
+
             // Establecer flujos de entrada y salida
-            input  = new DataInputStream( new BufferedInputStream(cliente.getInputStream() ) );
-            output    = new DataOutputStream( cliente.getOutputStream());
-            stateLabel.setText("Se obtuvieron los flujos de E/S");
-            
+            input = new DataInputStream(new BufferedInputStream(cliente.getInputStream()));
+            output = new DataOutputStream(cliente.getOutputStream());
+            setState("Se obtuvieron los flujos de E/S");
+
             // Comenzar a producir
-            startProduction();
+            t = new Thread(this);
+            t.start();
             
         } catch (IOException ex) {
-            stateLabel.setText("No se pudo conectar al servidor " + serverip);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InvocationTargetException ex) {
-            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+            setState("No se pudo conectar al servidor " + serverip);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -267,7 +237,8 @@ public class MainWindow extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MainWindow().setVisible(true);
+                MainWindow m = new MainWindow();
+                m.setVisible(true);
             }
         });
     }
@@ -280,5 +251,4 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel stateLabel;
     // End of variables declaration//GEN-END:variables
-
 }
