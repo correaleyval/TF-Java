@@ -30,7 +30,11 @@ public class MainWindow extends javax.swing.JFrame {
     private String serverip;
     private Socket cliente;
     private DataInputStream  input; 
-    private DataOutputStream output; 
+    private DataOutputStream output;
+    
+    private void startProduction() {
+        stateLabel.setText("Comenzando produccion");
+    }
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -123,6 +127,9 @@ public class MainWindow extends javax.swing.JFrame {
             input  = new DataInputStream( new BufferedInputStream(cliente.getInputStream() ) );
             output    = new DataOutputStream( cliente.getOutputStream());
             stateLabel.setText("Se obtuvieron los flujos de E/S");
+            
+            // Comenzar a producir
+            startProduction();
             
         } catch (IOException ex) {
             stateLabel.setText("No se pudo conectar al servidor " + serverip);
