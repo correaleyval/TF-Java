@@ -24,7 +24,12 @@ public class Intermedio {
     private final BufferIntermedio b;
 
     public Intermedio() {
+        // Crear buffer y activar hilo para el ordenamiento
         this.b = new BufferIntermedio();
+        
+        Thread th = new Thread(b);
+        
+        th.start();
     }
         
     public void listen(int port) throws IOException, ClassNotFoundException {

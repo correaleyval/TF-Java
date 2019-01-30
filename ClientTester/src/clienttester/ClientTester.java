@@ -27,9 +27,8 @@ public class ClientTester
             socket = new Socket(address, port); 
             System.out.println("Connected: " + socket.getInetAddress().getHostAddress()); 
   
-            input  = new DataInputStream(socket.getInputStream()); 
-  
-            
+            input  = new DataInputStream( new BufferedInputStream( socket.getInputStream() ) );
+            out    = new DataOutputStream( socket.getOutputStream());
         } 
         catch(UnknownHostException u) 
         { 
@@ -44,14 +43,12 @@ public class ClientTester
         while(true) {
             System.out.print("Message: ");
             msg = keyboard.nextLine();
-            out    = new DataOutputStream(socket.getOutputStream()); 
+             
             out.writeUTF(msg);
-            out.flush();
             out.flush();
             
             System.out.println("Sended Message");
-            
-            //System.out.println(input.readUTF());
+            System.out.println("Response: " + input.readUTF());
         }
     }
     
