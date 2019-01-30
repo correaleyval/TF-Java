@@ -20,15 +20,25 @@ public class Intermedio {
         p.listen(7777);
     }
     
+    private ConnectionHandler handler;
+    
     public void listen(int port) throws IOException {
         ServerSocket serverConnect = new ServerSocket(port);
         System.out.println("Proceso intermedio escuchando en el puerto: 7777");
         
+        
         while (true) {
-            ConnectionHandler handler = new ConnectionHandler(serverConnect.accept());
+            handler = new ConnectionHandler(serverConnect.accept());
 
             Thread thread = new Thread(handler);
             thread.start();
         }
-    }    
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize(); //To change body of generated methods, choose Tools | Templates.
+        
+        handler.closeConnection();
+    }  
 }
