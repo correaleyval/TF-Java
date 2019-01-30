@@ -9,12 +9,12 @@ import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.net.Socket;
 import java.util.Random;
+import javax.swing.SwingUtilities;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.SwingUtilities;
-
 /**
  *
  * @author ragnar
@@ -39,17 +39,37 @@ public class MainWindow extends javax.swing.JFrame {
     private DataOutputStream output;
     private Random r;
     private String query;
+    private String response;
     
-    private void startProduction() {
-        stateLabel.setText("Comenzando produccion");
+    private void setState(String m) throws InterruptedException, InvocationTargetException {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                stateLabel.setText(m);
+            }
+        });
+    }
+    
+    private void setArray(String m) throws InterruptedException, InvocationTargetException {
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                arrayLabel.setText(m);
+            }
+        });
+    }
+    
+    private void startProduction() throws InterruptedException, InvocationTargetException {
+        setState("Comenzando produccion");
         
         SwingUtilities.invokeLater(
             new Runnable()
             {
+                @Override
                 public void run() 
                 {
-                    // Generar query para el servidor con 5 numeros aleatorios
-                    
+                  while(true) {
+                  
                     query = "POST ";
                     String strarr = "";
                     
@@ -60,20 +80,55 @@ public class MainWindow extends javax.swing.JFrame {
                     
                     query += strarr;
                     
-                    arrayLabel.setText(strarr);
+                      try {
+                          setArray(strarr);
+                      } catch (InterruptedException ex) {
+                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                      } catch (InvocationTargetException ex) {
+                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                      }
                     
                     try {
-                        output.writeUTF(query);
-                        output.flush();
-                        stateLabel.setText(input.readUTF());
+                        do {
+                            output.writeUTF(query);
+                            output.flush();
+                            
+                            response = input.readUTF();
+                            
+                            setState(response);
+                            
+                            Thread.sleep(1000 + r.nextInt(3500));
+                        } while(response.equals("Esperando"));
                         
                     } catch (IOException ex) {
-                        stateLabel.setText("Error de conexion");
-                    }
+                        try {
+                            setState("Error de conexion");
+                        } catch (InterruptedException ex1) {
+                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
+                        } catch (InvocationTargetException ex1) {
+                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
+                        }
+                    } catch (InterruptedException ex) {
+                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                      } catch (InvocationTargetException ex) {
+                          Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                      }
                     
-
-                    
+                     try {
+                          Thread.sleep(1500);
+                      } catch (InterruptedException ex) {
+                        try {
+                            setState("Error de interrupcion del proceso");
+                        } catch (InterruptedException ex1) {
+                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
+                        } catch (InvocationTargetException ex1) {
+                            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex1);
+                        }
+                      }
+                  } 
                 } 
+
+            
             } 
         ); 
     }
@@ -175,6 +230,10 @@ public class MainWindow extends javax.swing.JFrame {
             
         } catch (IOException ex) {
             stateLabel.setText("No se pudo conectar al servidor " + serverip);
+        } catch (InterruptedException ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InvocationTargetException ex) {
+            Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
