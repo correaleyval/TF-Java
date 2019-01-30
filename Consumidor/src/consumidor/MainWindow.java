@@ -11,6 +11,8 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.SwingUtilities;
 
 /**
@@ -42,7 +44,38 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
     
     @Override
     public void run() {
+        query = "GET";
         
+        while(true) {
+            try {
+                
+                do {
+
+                    output.writeUTF(query);
+
+                    output.flush();
+
+                    response = input.readUTF();
+
+                    setArray(response);
+
+                    Thread.sleep(500 + r.nextInt(1000));
+                } while (response.equals("Esperando"));
+                
+            } catch (IOException ex) {
+                setState("Error de conexion");
+                t.stop();
+                
+            } catch (InterruptedException ex) {
+                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
     }
 
     private void setState(String m) {

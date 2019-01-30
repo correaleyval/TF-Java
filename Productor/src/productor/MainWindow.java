@@ -84,7 +84,7 @@ public class MainWindow extends javax.swing.JFrame implements Runnable {
                     output.flush();
 
                     response = input.readUTF();
-
+                    
                     setState(response);
 
                     Thread.sleep(500 + r.nextInt(1000));
